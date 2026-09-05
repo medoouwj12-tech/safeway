@@ -427,7 +427,7 @@
 
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <!-- Date -->
             <div>
@@ -459,22 +459,6 @@
                 <option value="سفر محافظات وسياحة" data-i18n="opt_srv_intercity">سفر محافظات وسياحة</option>
                 <option value="ليموزين رجال أعمال وشركات" data-i18n="opt_srv_corporate">ليموزين رجال أعمال وشركات</option>
                 <option value="مشاوير كشف أطباء" data-i18n="opt_srv_medical">مشاوير كشف أطباء</option>
-              </select>
-            </div>
-
-            <!-- Vehicle Selection -->
-            <div>
-              <label for="carClass" class="block text-xs font-bold text-neutral-300 mb-2">
-                <i class="fa-solid fa-car text-brand-red ml-1.5 mr-1.5"></i>
-                <span data-i18n="field_car_class">فئة السيارة المطلوبة *</span>
-              </label>
-              <select id="carClass" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
-                <option value="مرسيدس VIP (سيدان / زفاف)" data-i18n="opt_car_mercedes">مرسيدس VIP (سيدان / زفاف)</option>
-                <option value="سيدان فارهة (إلنترا / كورولا / سيراتو)" selected data-i18n="opt_car_sedan">سيدان فارهة (إلنترا / كورولا / سيراتو)</option>
-                <option value="سيارة رياضية عائلية SUV (سبورتاج)" data-i18n="opt_car_suv">سيارة رياضية عائلية SUV (سبورتاج)</option>
-                <option value="سيارة عائلية 7 راكب (كيا كارينز)" data-i18n="opt_car_carens">سيارة عائلية 7 راكب (كيا كارينز)</option>
-                <option value="ميني باص سياحي VIP 14 راكب (هاي إس)" data-i18n="opt_car_van">ميني باص سياحي VIP 14 راكب (هاي إس)</option>
-                <option value="بيجو 508 زفاف العرايس" data-i18n="opt_car_peugeot">بيجو 508 زفاف العرايس</option>
               </select>
             </div>
 
@@ -2098,8 +2082,7 @@
       const date = document.getElementById('tripDate').value;
       const time = document.getElementById('tripTime').value;
       const service = document.getElementById('serviceType').value;
-      const carClass = document.getElementById('carClass').value;
-      const name = document.getElementById('customerName').value.trim();
+            const name = document.getElementById('customerName').value.trim();
       const phone = document.getElementById('customerPhone').value.trim();
       const notes = document.getElementById('specialNotes').value.trim();
 
@@ -2120,7 +2103,6 @@
                   `📅 *التاريخ:* ${date}\n` +
                   `⏰ *الوقت:* ${time}\n` +
                   `⭐ *نوع الخدمة:* ${service}\n` +
-                  `🚘 *فئة السيارة:* ${carClass}\n` +
                   (notes ? `📝 *ملاحظات خاصة:* ${notes}\n` : '') +
                   `━━━━━━━━━━━━━━━━━━━━\n` +
                   `✨ تم الإرسال من الموقع الإلكتروني الرسمي لشركة سيف واي ليموزين`;
@@ -2134,7 +2116,6 @@
                   `📅 *Date:* ${date}\n` +
                   `⏰ *Time:* ${time}\n` +
                   `⭐ *Service Category:* ${service}\n` +
-                  `🚘 *Vehicle Class:* ${carClass}\n` +
                   (notes ? `📝 *Special Requests:* ${notes}\n` : '') +
                   `━━━━━━━━━━━━━━━━━━━━\n` +
                   `✨ Sent via Safeway Limousine Official Website`;
@@ -2153,14 +2134,12 @@
       const pickupEl = document.getElementById('pickupLocation');
       const dropoffEl = document.getElementById('dropoffLocation');
       const serviceEl = document.getElementById('serviceType');
-      const carClassEl = document.getElementById('carClass');
 
       if (pickupEl) pickupEl.value = pickup;
       if (dropoffEl) dropoffEl.value = dropoff;
 
       if (serviceCategory === 'wedding') {
         if (serviceEl) serviceEl.value = 'زفاف العرايس والمناسبات';
-        if (carClassEl) carClassEl.value = 'مرسيدس VIP (سيدان / زفاف)';
       } else if (serviceCategory === 'airport') {
         if (serviceEl) serviceEl.value = 'استقبال وتوديع مطارات';
       } else if (serviceCategory === 'intercity') {
@@ -2177,31 +2156,14 @@
 
     // Helper when clicking "Book This Car" on cards
     function bookSpecificCar(carName, serviceName) {
-      const carClassEl = document.getElementById('carClass');
       const serviceEl = document.getElementById('serviceType');
+      const notesEl = document.getElementById('specialNotes');
 
       if (serviceEl && serviceName) {
         serviceEl.value = serviceName;
       }
-
-      // Check option match or set custom
-      if (carClassEl) {
-        let matched = false;
-        for (let i = 0; i < carClassEl.options.length; i++) {
-          if (carClassEl.options[i].value.includes(carName) || carName.includes(carClassEl.options[i].value)) {
-            carClassEl.selectedIndex = i;
-            matched = true;
-            break;
-          }
-        }
-        if (!matched) {
-          // Set closest option
-          if (carName.toLowerCase().includes('مرسيدس')) carClassEl.value = 'مرسيدس VIP (سيدان / زفاف)';
-          else if (carName.toLowerCase().includes('هاي إس') || carName.toLowerCase().includes('باص')) carClassEl.value = 'ميني باص سياحي VIP 14 راكب (هاي إس)';
-          else if (carName.toLowerCase().includes('كارينز')) carClassEl.value = 'سيارة عائلية 7 راكب (كيا كارينز)';
-          else if (carName.toLowerCase().includes('سبورتاج')) carClassEl.value = 'سيارة رياضية عائلية SUV (سبورتاج)';
-          else carClassEl.value = 'سيدان فارهة (إلنترا / كورولا / سيراتو)';
-        }
+      if (notesEl && carName) {
+        notesEl.value = (currentLang === 'ar' ? 'السيارة المطلوبة: ' : 'Requested Vehicle: ') + carName;
       }
 
       const bookingSec = document.getElementById('booking-section');
