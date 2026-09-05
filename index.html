@@ -196,11 +196,11 @@
         <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-neutral-300">
           <a href="#home" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_home">الرئيسية</a>
           <a href="#about" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_about">من نحن</a>
+          <a href="#fleet" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_fleet">أسطول السيارات</a>
           <a href="#wedding" class="hover:text-brand-red transition-colors py-1 flex items-center gap-1.5 text-red-400 font-semibold relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all">
             <i class="fa-solid fa-gem text-xs text-brand-red animate-pulse"></i>
             <span data-i18n="nav_wedding">زفاف العرايس</span>
           </a>
-          <a href="#fleet" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_fleet">أسطول السيارات</a>
           <a href="#services" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_services">خدماتنا</a>
           <a href="#why-us" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_why_us">لماذا نحن</a>
           <a href="#contact" class="hover:text-brand-red transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-red hover:after:w-full after:transition-all" data-i18n="nav_contact">اتصل بنا</a>
@@ -234,11 +234,11 @@
     <div id="mobileMenu" class="hidden lg:hidden border-t border-neutral-800 bg-brand-dark/98 px-4 pt-3 pb-6 space-y-3 transition-all">
       <a href="#home" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_home">الرئيسية</a>
       <a href="#about" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_about">من نحن</a>
+      <a href="#fleet" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_fleet">أسطول السيارات</a>
       <a href="#wedding" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-red-950/40 text-red-400 font-bold flex items-center justify-between">
         <span data-i18n="nav_wedding">زفاف العرايس</span>
         <span class="text-xs bg-brand-red text-white px-2 py-0.5 rounded-full" data-i18n="badge_special">مميز</span>
       </a>
-      <a href="#fleet" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_fleet">أسطول السيارات</a>
       <a href="#services" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_services">خدماتنا</a>
       <a href="#why-us" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_why_us">لماذا نحن</a>
       <a href="#contact" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_contact">اتصل بنا</a>
@@ -260,7 +260,7 @@
     
     <!-- Background Image with Luxury Dark Gradients -->
     <div class="absolute inset-0 z-0">
-      <img src="./images/wedding-2.jpg" alt="Safeway Limousine Fleet" class="w-full h-full object-cover object-center filter brightness-40 scale-105 transform duration-1000" onerror="this.src='./wedding-mercedes-amg-white.jpg'" />
+      <img src="./images/hero-bg.jpg" alt="Safeway Limousine Official Banner" class="w-full h-full object-cover object-center filter brightness-45 scale-105 transform duration-1000" onerror="this.src='./hero-bg.jpg'" />
       <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/80 to-brand-black/60"></div>
       <div class="absolute inset-0 bg-gradient-to-r from-brand-black/90 via-transparent to-brand-black/90"></div>
       <!-- Subtle Red Spotlight -->
@@ -295,7 +295,12 @@
           <span data-i18n="hero_cta_book">احجز رحلتك الفاخرة الآن</span>
         </a>
 
-        <a href="#wedding" class="border border-red-500/50 bg-neutral-900/80 hover:bg-red-950/50 hover:border-red-500 text-white px-7 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 backdrop-blur-md">
+        <a href="#fleet" class="border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 hover:border-brand-red text-white px-7 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 backdrop-blur-md">
+          <i class="fa-solid fa-car text-brand-red"></i>
+          <span data-i18n="hero_cta_fleet">استكشف أسطولنا الفاخر</span>
+        </a>
+
+        <a href="#wedding" class="border border-red-500/50 bg-red-950/30 hover:bg-red-950/60 hover:border-red-500 text-white px-7 py-4 rounded-xl font-bold text-base transition-all flex items-center gap-2 backdrop-blur-md">
           <i class="fa-solid fa-heart text-brand-red"></i>
           <span data-i18n="hero_cta_wedding">سيارات زفاف العرايس</span>
         </a>
@@ -466,6 +471,42 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             
+            <!-- Passengers Count -->
+            <div>
+              <label for="passengersCount" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-users text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_passengers">عدد الأفراد (الركاب) *</span>
+              </label>
+              <select id="passengersCount" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
+                <option value="1 فرد" data-i18n="opt_pax_1">1 فرد</option>
+                <option value="2 أفراد" data-i18n="opt_pax_2">2 أفراد</option>
+                <option value="3 أفراد" data-i18n="opt_pax_3">3 أفراد</option>
+                <option value="4 أفراد" data-i18n="opt_pax_4" selected>4 أفراد (سيارة صالون / سيدان)</option>
+                <option value="5 إلى 7 أفراد" data-i18n="opt_pax_family">5 إلى 7 أفراد (عائلي / SUV)</option>
+                <option value="8 إلى 14 فرد" data-i18n="opt_pax_van">8 إلى 14 فرد (فان سياحي VIP)</option>
+                <option value="أكثر من 14 فرد" data-i18n="opt_pax_group">أكثر من 14 فرد (مجموعة)</option>
+              </select>
+            </div>
+
+            <!-- Luggage Count -->
+            <div>
+              <label for="luggageCount" class="block text-xs font-bold text-neutral-300 mb-2">
+                <i class="fa-solid fa-suitcase-rolling text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_luggage">عدد الحقائب والأمتعة *</span>
+              </label>
+              <select id="luggageCount" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
+                <option value="بدون حقائب كبيرة (حقائب يد شخصية فقط)" data-i18n="opt_luggage_0">بدون حقائب كبيرة (حقائب يد شخصية فقط)</option>
+                <option value="1 إلى 2 حقيبة سفر" data-i18n="opt_luggage_1_2">1 إلى 2 حقيبة سفر</option>
+                <option value="3 إلى 4 حقائب سفر" data-i18n="opt_luggage_3_4" selected>3 إلى 4 حقائب سفر</option>
+                <option value="5 إلى 7 حقائب كبيرة" data-i18n="opt_luggage_5_7">5 إلى 7 حقائب كبيرة</option>
+                <option value="8 حقائب فأكثر" data-i18n="opt_luggage_8_plus">8 حقائب فأكثر (تحتاج فان سياحي)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
             <!-- Customer Name -->
             <div>
               <label for="customerName" class="block text-xs font-bold text-neutral-300 mb-2">
@@ -523,9 +564,431 @@
 
 
   <!-- ============================================================ -->
+  <!-- FLEET SHOWCASE SECTION                                       -->
+  <!-- ============================================================ -->
+  <section id="fleet" class="py-20 px-4 bg-brand-black border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="fleet_tag">
+          أسطول سيف واي | OUR PREMIUM FLEET
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4" data-i18n="fleet_heading">
+          سيارات حديثة تلائم كافة المناسبات والرحلات
+        </h2>
+        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="fleet_subheading">
+          جميع سياراتنا موديلات حديثة تبدأ من 2022 حتى 2026، مزودة بنظام تتبع GPS لسلامتكم، مكيفة ومعقمة ومجهزة بأعلى معايير الراحة.
+        </p>
+      </div>
+
+      <!-- Fleet Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <button onclick="filterFleet('all')" class="fleet-tab active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all border border-brand-red bg-brand-red text-white" data-filter="all" data-i18n="tab_all">
+          جميع السيارات
+        </button>
+        <button onclick="filterFleet('sedan')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="sedan" data-i18n="tab_sedan">
+          سيدان فارهة
+        </button>
+        <button onclick="filterFleet('suv')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="suv" data-i18n="tab_suv">
+          SUV ودفع رباعي
+        </button>
+        <button onclick="filterFleet('wedding')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="wedding" data-i18n="tab_wedding">
+          سيارات الزفاف
+        </button>
+        <button onclick="filterFleet('van')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="van" data-i18n="tab_van">
+          فانات وميني باص VIP
+        </button>
+      </div>
+
+      <!-- Fleet Cards Grid -->
+      <div id="fleetGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Car 1: Hyundai Elantra White -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-hyundai-elantra-white.jpg', 'هيونداي إلنترا 2022-2026')">
+            <img src="./images/sedan-hyundai-elantra-white.jpg" alt="هيونداي إلنترا سيف واي ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-hyundai-elantra-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_elantra_title">هيونداي إلنترا CN7 فارهة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_elantra_desc">
+                راحة استثنائية، ثبات فائق على الطرق السريعة ومثالية لمشاوير المطار وسفر المحافظات ورجال الأعمال.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_3">3 حقائب</span></div>
+                <div><i class="fa-solid fa-snowflake text-brand-red mb-1 block"></i> <span data-i18n="spec_ac">تكييف ثنائي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('هيونداي إلنترا CN7 فارهة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 2: Kia Sportage Red -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/suv-kia-sportage-red.jpg', 'كيا سبورتاج SUV أحمر أمام مقر سيف واي')">
+            <img src="./images/suv-kia-sportage-red.jpg" alt="كيا سبورتاج سيف واي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./suv-kia-sportage-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">SUV 2022-2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_sportage_title">كيا سبورتاج الرياضية SUV</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_suv">دفع رباعي عائلي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_sportage_desc">
+                ارتفاع ممتاز عن الأرض، اتساع فسيح للشنطة، مقاعد مريحة لمسافات السفر الطويلة بين المحافظات.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_4">4 حقائب كبرى</span></div>
+                <div><i class="fa-solid fa-road text-brand-red mb-1 block"></i> <span data-i18n="spec_smooth">ثبات عالي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('كيا سبورتاج الرياضية SUV', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 3: Kia Cerato White -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-kia-cerato-white.jpg', 'كيا سيراتو فارهة الحديثة 2022-2026')">
+            <img src="./images/sedan-kia-cerato-white.jpg" alt="كيا سيراتو سيف واي ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-kia-cerato-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_cerato_title">كيا سيراتو فارهة الحديثة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_cerato_desc">
+                تصميم انسيابي عصري وراحة ممتازة واستهلاك اقتصادي متطور، مجهزة بالكامل لمشاوير المطار والعمل والسياحة.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_3">3 حقائب</span></div>
+                <div><i class="fa-solid fa-snowflake text-brand-red mb-1 block"></i> <span data-i18n="spec_ac">تكييف ثنائي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('كيا سيراتو فارهة الحديثة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 4: Toyota HiAce Luxury Passenger Minibus -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/van-toyota-hiace-white.jpg', 'تويوتا هاي إس ميني باص VIP 14 راكب')">
+            <img src="./images/van-toyota-hiace-white.jpg" alt="تويوتا هاي إس فارهة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_title">تويوتا هاي إس Custom VIP</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان عائلية وسياحية</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_desc">
+                صالون سياحي فاخر بمقاعد جلد كابتن شير كاستم وشاشات سقفية وتكييف مركزي قوي للرحلات والمطارات.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_14">14 راكب</span></div>
+                <div><i class="fa-solid fa-tv text-brand-red mb-1 block"></i> <span data-i18n="spec_screen">شاشات VIP</span></div>
+                <div><i class="fa-solid fa-van-shuttle text-brand-red mb-1 block"></i> <span data-i18n="spec_luggage">سعة حقائب ضخمة</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا هاي إس Custom VIP 14 راكب', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 5: Kia Sportage Silver SUV -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/suv-kia-sportage-silver.jpg', 'كيا سبورتاج سيلفر إيديشن SUV')">
+            <img src="./images/suv-kia-sportage-silver.jpg" alt="كيا سبورتاج سيلفر" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./suv-kia-sportage-silver.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">SUV 2022-2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_sportage_silver_title">كيا سبورتاج سيلفر إيديشن SUV</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_suv">دفع رباعي عائلي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_sportage_silver_desc">
+                طراز فضي فاخر بلمسات كرومية أنيقة، مساحة واسعة للحقائب والركاب مع أداء قوي وثبات عالٍ.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_4">4 حقائب كبرى</span></div>
+                <div><i class="fa-solid fa-road text-brand-red mb-1 block"></i> <span data-i18n="spec_4wd">دفع رباعي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('كيا سبورتاج سيلفر إيديشن SUV', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 6: Toyota Corolla Blue -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-toyota-corolla-blue.jpg', 'تويوتا كورولا 2022-2026 كحلي')">
+            <img src="./images/sedan-toyota-corolla-blue.jpg" alt="تويوتا كورولا سيف واي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-toyota-corolla-blue.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_corolla_title">تويوتا كورولا الحديثة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان فارهة</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_corolla_desc">
+                الاعتمادية الأولى عالمياً بأعلى مستويات الراحة والعزل الصوتي، مثالية لمشاوير القاهرة والمطارات.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_3">3 حقائب</span></div>
+                <div><i class="fa-solid fa-shield-cat text-brand-red mb-1 block"></i> <span data-i18n="spec_safety">أعلى أمان</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا كورولا الحديثة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 7: Kia Carens Family Red (7 Seats) -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/family-kia-carens-red.jpg', 'كيا كارينز عائلية 7 ركاب')">
+            <img src="./images/family-kia-carens-red.jpg" alt="كيا كارينز عائلية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./family-kia-carens-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">7 ركاب</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_carens_title">كيا كارينز عائلية رحبة</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_family">عائلية 7 مقاعد</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_carens_desc">
+                الحل الأمثل للعائلات والمجموعات حتى 7 أفراد، مع مرونة تامة لطي المقاعد وتوسيع مساحة الحقائب.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_7">7 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_4">4-5 حقائب</span></div>
+                <div><i class="fa-solid fa-fan text-brand-red mb-1 block"></i> <span data-i18n="spec_ac_rear">تكييف خلفي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('كيا كارينز عائلية 7 ركاب', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 8: Hyundai Elantra Night Edition -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-hyundai-elantra-night.jpg', 'هيونداي إلنترا نايت إيديشن 2022-2026')">
+            <img src="./images/sedan-hyundai-elantra-night.jpg" alt="هيونداي إلنترا نايت إيديشن" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-hyundai-elantra-night.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_elantra_night_title">هيونداي إلنترا نايت إيديشن</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_elantra_night_desc">
+                طراز خاص بإضاءة ليلية وشخصية رياضية فخمة، عزل صوتي متفوق ومقاعد وثيرة لأطول الرحلات.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
+                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_3">3 حقائب</span></div>
+                <div><i class="fa-solid fa-lightbulb text-brand-red mb-1 block"></i> <span data-i18n="spec_led">إضاءة LED</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('هيونداي إلنترا نايت إيديشن', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 9: Toyota HiAce Highway Express -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/van-toyota-hiace-highway.jpg', 'تويوتا هاي إس إكسبريس للسفر والمحافظات')">
+            <img src="./images/van-toyota-hiace-highway.jpg" alt="تويوتا هاي إس طريق سريع" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-highway.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_highway_title">تويوتا هاي إس إكسبريس للسفر</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان سياحية وسفر</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_highway_desc">
+                جاهزة لرحلات الطرق السريعة بين بورسعيد والقاهرة والمحافظات، ثبات فائق ومساحة أمتعة ضخمة.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_14">14 راكب</span></div>
+                <div><i class="fa-solid fa-van-shuttle text-brand-red mb-1 block"></i> <span data-i18n="spec_luggage">سعة حقائب ضخمة</span></div>
+                <div><i class="fa-solid fa-snowflake text-brand-red mb-1 block"></i> <span data-i18n="spec_ac">تكييف مركزي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا هاي إس إكسبريس للسفر', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 10: Toyota HiAce Tourism Safari -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/van-toyota-hiace-mountain.jpg', 'تويوتا هاي إس رحلات وسياحة')">
+            <img src="./images/van-toyota-hiace-mountain.jpg" alt="تويوتا هاي إس سياحة وسفاري" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-mountain.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_safari_title">تويوتا هاي إس سفاري ورحلات</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان عائلية وسياحية</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_safari_desc">
+                مجهزة بأحدث مقاعد الراحة للرحلات السياحية للمصايف والعين السخنة وشرم الشيخ مع شاشات ترفيه.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_14">14 راكب</span></div>
+                <div><i class="fa-solid fa-tv text-brand-red mb-1 block"></i> <span data-i18n="spec_screens">شاشات ذكية</span></div>
+                <div><i class="fa-solid fa-wifi text-brand-red mb-1 block"></i> <span data-i18n="spec_wifi">WiFi & GPS</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('تويوتا هاي إس رحلات وسياحة', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 11: Mercedes White AMG Wedding -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between border-red-600/30" data-category="wedding">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-2.jpg', 'مرسيدس AMG C-Class بيضاء زفاف أمام مقر سيف واي')">
+            <img src="./images/wedding-2.jpg" alt="مرسيدس AMG وايت إيديشن زفاف" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-mercedes-amg-white.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-red-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg" data-i18n="car_badge_exclusive">الأكثر طلباً للعرائس</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_merc_white_title">مرسيدس AMG وايت إيديشن زفاف</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_merc_white_desc">
+                درة أسطول الزفاف الأبيض أمام مقر سيف واي ببورسعيد، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-tie text-brand-red mb-1 block"></i> <span data-i18n="spec_chauffeur">سائق ببدلة</span></div>
+                <div><i class="fa-solid fa-gem text-brand-red mb-1 block"></i> <span data-i18n="spec_flower">ورد طبيعي</span></div>
+                <div><i class="fa-solid fa-wand-magic-sparkles text-brand-red mb-1 block"></i> <span data-i18n="wedding_feature_clean">تلميع فندقي</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('مرسيدس AMG بيضاء زفاف', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 12: Mercedes Brabus Wedding Black -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between border-red-600/30" data-category="wedding">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-1.jpg', 'مرسيدس C-Class برابوس زفاف')">
+            <img src="./images/wedding-1.jpg" alt="مرسيدس زفاف برابوس" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-mercedes-brabus-black.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-brand-red text-white text-[11px] font-bold px-3 py-1 rounded-full">VIP زفاف</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_merc_brabus_title">مرسيدس C-Class برابوس</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_merc_brabus_desc">
+                القمة في الفخامة والهيبة مع باقة ورد ملكية وتجهيز متكامل للزفاف والمناسبات الخاصة الرفيعة.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-tie text-brand-red mb-1 block"></i> <span data-i18n="spec_chauffeur">سائق ببدلة</span></div>
+                <div><i class="fa-solid fa-gem text-brand-red mb-1 block"></i> <span data-i18n="spec_flower">ورد طبيعي</span></div>
+                <div><i class="fa-solid fa-wifi text-brand-red mb-1 block"></i> <span data-i18n="spec_wifi">WiFi & GPS</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('مرسيدس C-Class برابوس', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Car 13: Peugeot 508 Red Wedding -->
+        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="wedding">
+          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-3.jpg', 'بيجو 508 جي تي أحمر ياقوتي زفاف')">
+            <img src="./images/wedding-3.jpg" alt="بيجو 508 زفاف حمراء" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-peugeot-508-red.jpg'" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <span class="absolute top-3 right-3 bg-neutral-900/90 text-red-400 border border-red-500/40 text-[11px] font-bold px-3 py-1 rounded-full shadow-lg" data-i18n="car_badge_sport">رياضية فاخرة</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-base font-extrabold text-white" data-i18n="car_peugeot_red_title">بيجو 508 جي تي أحمر ياقوتي</h3>
+                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
+              </div>
+              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_peugeot_red_desc">
+                حضور لافت وجذاب بلون أحمر ملكي وبوكيه ورد أبيض فاخر وفتحة سقف بانورامية لصور زفاف لا تُنسى.
+              </p>
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
+                <div><i class="fa-solid fa-user-tie text-brand-red mb-1 block"></i> <span data-i18n="spec_chauffeur">سائق ببدلة</span></div>
+                <div><i class="fa-solid fa-sun text-brand-red mb-1 block"></i> <span data-i18n="spec_sunroof">فتحة سقف</span></div>
+                <div><i class="fa-solid fa-clock text-brand-red mb-1 block"></i> <span data-i18n="spec_early">وصول مبكر</span></div>
+              </div>
+            </div>
+            <button onclick="bookSpecificCar('بيجو 508 زفاف حمراء', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================ -->
   <!-- SPECIAL FEATURE: WEDDING CARS & ZAFAF                        -->
   <!-- ============================================================ -->
-  <section id="wedding" class="py-20 px-4 bg-brand-black relative overflow-hidden">
+  <section id="wedding" class="py-20 px-4 bg-brand-dark border-t border-white/5 relative overflow-hidden">
     
     <!-- Ambient Rose/Red Glows -->
     <div class="absolute top-10 right-0 w-96 h-96 bg-brand-red/10 rounded-full blur-[130px] pointer-events-none"></div>
@@ -703,233 +1166,6 @@
           <i class="fa-brands fa-whatsapp text-xl"></i>
           <span data-i18n="btn_book_wedding_now">احجز سيارة زفافك الآن عبر واتساب</span>
         </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================ -->
-  <!-- FLEET SHOWCASE SECTION                                       -->
-  <!-- ============================================================ -->
-  <section id="fleet" class="py-20 px-4 bg-brand-dark border-t border-white/5 relative">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="inline-block text-brand-red font-bold text-xs tracking-widest uppercase mb-2" data-i18n="fleet_tag">
-          أسطول سيف واي | OUR PREMIUM FLEET
-        </span>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4" data-i18n="fleet_heading">
-          سيارات حديثة تلائم كافة المناسبات والرحلات
-        </h2>
-        <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="fleet_subheading">
-          جميع سياراتنا موديلات حديثة تبدأ من 2022 حتى 2026، مزودة بنظام تتبع GPS لسلامتكم، مكيفة ومعقمة ومجهزة بأعلى معايير الراحة.
-        </p>
-      </div>
-
-      <!-- Fleet Category Filter Tabs -->
-      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
-        <button onclick="filterFleet('all')" class="fleet-tab active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all border border-brand-red bg-brand-red text-white" data-filter="all" data-i18n="tab_all">
-          جميع السيارات
-        </button>
-        <button onclick="filterFleet('sedan')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="sedan" data-i18n="tab_sedan">
-          سيدان فارهة
-        </button>
-        <button onclick="filterFleet('suv')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="suv" data-i18n="tab_suv">
-          SUV ودفع رباعي
-        </button>
-        <button onclick="filterFleet('wedding')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="wedding" data-i18n="tab_wedding">
-          سيارات الزفاف
-        </button>
-        <button onclick="filterFleet('van')" class="fleet-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all border border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-brand-red hover:text-white" data-filter="van" data-i18n="tab_van">
-          فانات وميني باص VIP
-        </button>
-      </div>
-
-      <!-- Fleet Cards Grid -->
-      <div id="fleetGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Car 1: Hyundai Elantra White -->
-        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
-          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-hyundai-elantra-white.jpg', 'هيونداي إلنترا 2022-2026')">
-            <img src="./images/sedan-hyundai-elantra-white.jpg" alt="هيونداي إلنترا سيف واي ليموزين" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-hyundai-elantra-white.jpg'" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="text-base font-extrabold text-white" data-i18n="car_elantra_title">هيونداي إلنترا CN7 فارهة</h3>
-                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان تنفيذي</span>
-              </div>
-              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_elantra_desc">
-                راحة استثنائية، ثبات فائق على الطرق السريعة ومثالية لمشاوير المطار وسفر المحافظات ورجال الأعمال.
-              </p>
-              <!-- Specs -->
-              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
-                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
-                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_3">3 حقائب</span></div>
-                <div><i class="fa-solid fa-snowflake text-brand-red mb-1 block"></i> <span data-i18n="spec_ac">تكييف ثنائي</span></div>
-              </div>
-            </div>
-            <button onclick="bookSpecificCar('هيونداي إلنترا CN7 فارهة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-calendar-plus"></i>
-              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Car 2: Kia Sportage Red -->
-        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
-          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/suv-kia-sportage-red.jpg', 'كيا سبورتاج SUV أحمر أمام مقر سيف واي')">
-            <img src="./images/suv-kia-sportage-red.jpg" alt="كيا سبورتاج سيف واي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./suv-kia-sportage-red.jpg'" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">SUV 2022-2026</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="text-base font-extrabold text-white" data-i18n="car_sportage_title">كيا سبورتاج الرياضية SUV</h3>
-                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_suv">دفع رباعي عائلي</span>
-              </div>
-              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_sportage_desc">
-                ارتفاع ممتاز عن الأرض، اتساع فسيح للشنطة، مقاعد مريحة لمسافات السفر الطويلة بين المحافظات.
-              </p>
-              <!-- Specs -->
-              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
-                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
-                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_4">4 حقائب كبرى</span></div>
-                <div><i class="fa-solid fa-road text-brand-red mb-1 block"></i> <span data-i18n="spec_smooth">ثبات عالي</span></div>
-              </div>
-            </div>
-            <button onclick="bookSpecificCar('كيا سبورتاج الرياضية SUV', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-calendar-plus"></i>
-              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Car 3: Mercedes Brabus Wedding Black -->
-        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between border-red-600/30" data-category="wedding">
-          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/wedding-1.jpg', 'مرسيدس C-Class برابوس زفاف')">
-            <img src="./images/wedding-1.jpg" alt="مرسيدس زفاف برابوس" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./wedding-mercedes-brabus-black.jpg'" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-brand-red text-white text-[11px] font-bold px-3 py-1 rounded-full">VIP زفاف</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="text-base font-extrabold text-white" data-i18n="car_merc_brabus_title">مرسيدس C-Class برابوس</h3>
-                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
-              </div>
-              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_merc_brabus_desc">
-                القمة في الفخامة والهيبة مع باقة ورد ملكية وتجهيز متكامل للزفاف والمناسبات الخاصة الرفيعة.
-              </p>
-              <!-- Specs -->
-              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
-                <div><i class="fa-solid fa-user-tie text-brand-red mb-1 block"></i> <span data-i18n="spec_chauffeur">سائق ببدلة</span></div>
-                <div><i class="fa-solid fa-gem text-brand-red mb-1 block"></i> <span data-i18n="spec_flower">ورد طبيعي</span></div>
-                <div><i class="fa-solid fa-wifi text-brand-red mb-1 block"></i> <span data-i18n="spec_wifi">WiFi & GPS</span></div>
-              </div>
-            </div>
-            <button onclick="bookSpecificCar('مرسيدس C-Class برابوس', 'زفاف العرايس والمناسبات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-calendar-plus"></i>
-              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Car 4: Toyota HiAce Luxury Passenger Minibus -->
-        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="van">
-          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/car-van.jpg', 'تويوتا هاي إس ميني باص VIP 14 راكب')">
-            <img src="./images/car-van.jpg" alt="تويوتا هاي إس فارهة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./van-toyota-hiace-white.jpg'" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">14 راكب VIP</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="text-base font-extrabold text-white" data-i18n="car_hiace_title">تويوتا هاي إس Custom VIP</h3>
-                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان عائلية وسياحية</span>
-              </div>
-              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_desc">
-                صالون سياحي فاخر بمقاعد جلد كابتن شير كاستم وشاشات سقفية وتكييف مركزي قوي للرحلات والمطارات.
-              </p>
-              <!-- Specs -->
-              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
-                <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_14">14 راكب</span></div>
-                <div><i class="fa-solid fa-tv text-brand-red mb-1 block"></i> <span data-i18n="spec_screen">شاشات VIP</span></div>
-                <div><i class="fa-solid fa-van-shuttle text-brand-red mb-1 block"></i> <span data-i18n="spec_luggage">سعة حقائب ضخمة</span></div>
-              </div>
-            </div>
-            <button onclick="bookSpecificCar('تويوتا هاي إس Custom VIP 14 راكب', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-calendar-plus"></i>
-              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Car 5: Toyota Corolla Blue -->
-        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="sedan">
-          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/sedan-toyota-corolla-blue.jpg', 'تويوتا كورولا 2022-2026 كحلي')">
-            <img src="./images/sedan-toyota-corolla-blue.jpg" alt="تويوتا كورولا سيف واي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./sedan-toyota-corolla-blue.jpg'" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">2022 - 2026</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="text-base font-extrabold text-white" data-i18n="car_corolla_title">تويوتا كورولا الحديثة</h3>
-                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_sedan">سيدان فارهة</span>
-              </div>
-              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_corolla_desc">
-                الاعتمادية الأولى عالمياً بأعلى مستويات الراحة والعزل الصوتي، مثالية لمشاوير القاهرة والمطارات.
-              </p>
-              <!-- Specs -->
-              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
-                <div><i class="fa-solid fa-user-group text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_4">4 ركاب</span></div>
-                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_3">3 حقائب</span></div>
-                <div><i class="fa-solid fa-shield-cat text-brand-red mb-1 block"></i> <span data-i18n="spec_safety">أعلى أمان</span></div>
-              </div>
-            </div>
-            <button onclick="bookSpecificCar('تويوتا كورولا الحديثة', 'استقبال وتوديع مطارات')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-calendar-plus"></i>
-              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Car 6: Kia Carens Family Red (7 Seats) -->
-        <div class="fleet-item glass-card rounded-2xl overflow-hidden hover-glow transition-all group flex flex-col justify-between" data-category="suv">
-          <div class="relative overflow-hidden aspect-[16/10] cursor-pointer" onclick="openLightbox('./images/family-kia-carens-red.jpg', 'كيا كارينز عائلية 7 ركاب')">
-            <img src="./images/family-kia-carens-red.jpg" alt="كيا كارينز عائلية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='./family-kia-carens-red.jpg'" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-            <span class="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-neutral-200 border border-white/10 text-[11px] font-bold px-3 py-1 rounded-full">7 ركاب</span>
-          </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="text-base font-extrabold text-white" data-i18n="car_carens_title">كيا كارينز عائلية رحبة</h3>
-                <span class="text-xs text-brand-red font-semibold" data-i18n="cat_family">عائلية 7 مقاعد</span>
-              </div>
-              <p class="text-xs text-neutral-400 mb-4" data-i18n="car_carens_desc">
-                الحل الأمثل للعائلات والمجموعات حتى 7 أفراد، مع مرونة تامة لطي المقاعد وتوسيع مساحة الحقائب.
-              </p>
-              <!-- Specs -->
-              <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
-                <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_7">7 ركاب</span></div>
-                <div><i class="fa-solid fa-suitcase-rolling text-brand-red mb-1 block"></i> <span data-i18n="spec_bags_4">4-5 حقائب</span></div>
-                <div><i class="fa-solid fa-fan text-brand-red mb-1 block"></i> <span data-i18n="spec_ac_rear">تكييف خلفي</span></div>
-              </div>
-            </div>
-            <button onclick="bookSpecificCar('كيا كارينز عائلية 7 ركاب', 'سفر محافظات وسياحة')" class="w-full py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 hover:border-brand-red hover:bg-brand-red text-white text-xs font-bold transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-calendar-plus"></i>
-              <span data-i18n="btn_book_this">احجز هذه السيارة</span>
-            </button>
-          </div>
-        </div>
-
       </div>
 
     </div>
@@ -1475,8 +1711,8 @@
           <ul class="space-y-2.5">
             <li><a href="#home" class="hover:text-brand-red transition-colors" data-i18n="nav_home">الرئيسية</a></li>
             <li><a href="#about" class="hover:text-brand-red transition-colors" data-i18n="nav_about">من نحن</a></li>
-            <li><a href="#wedding" class="hover:text-brand-red transition-colors" data-i18n="nav_wedding">سيارات زفاف العرايس</a></li>
             <li><a href="#fleet" class="hover:text-brand-red transition-colors" data-i18n="nav_fleet">أسطول السيارات</a></li>
+            <li><a href="#wedding" class="hover:text-brand-red transition-colors" data-i18n="nav_wedding">سيارات زفاف العرايس</a></li>
             <li><a href="#booking-section" class="hover:text-brand-red transition-colors" data-i18n="btn_book_now">محرك الحجز الفوري</a></li>
             <li><a href="#contact" class="hover:text-brand-red transition-colors" data-i18n="nav_contact">اتصل بنا وموقعنا</a></li>
           </ul>
@@ -1635,6 +1871,42 @@
         field_name: "الاسم بالكامل *",
         field_phone: "رقم الهاتف / الواتساب *",
         field_notes: "ملاحظات إضافية (رقم الرحلة الجوية، طلب بوكيه ورد، عدد الحقائب...)",
+        field_passengers: "عدد الأفراد (الركاب) *",
+        field_luggage: "عدد الحقائب والأمتعة *",
+        opt_pax_1: "1 فرد",
+        opt_pax_2: "2 أفراد",
+        opt_pax_3: "3 أفراد",
+        opt_pax_4: "4 أفراد (سيارة صالون / سيدان)",
+        opt_pax_family: "5 إلى 7 أفراد (عائلي / SUV)",
+        opt_pax_van: "8 إلى 14 فرد (فان سياحي VIP)",
+        opt_pax_group: "أكثر من 14 فرد (مجموعة)",
+        opt_luggage_0: "بدون حقائب كبيرة (حقائب يد شخصية فقط)",
+        opt_luggage_1_2: "1 إلى 2 حقيبة سفر",
+        opt_luggage_3_4: "3 إلى 4 حقائب سفر",
+        opt_luggage_5_7: "5 إلى 7 حقائب كبيرة",
+        opt_luggage_8_plus: "8 حقائب فأكثر (تحتاج فان سياحي)",
+        hero_cta_fleet: "استكشف أسطولنا الفاخر",
+
+        car_cerato_title: "كيا سيراتو فارهة الحديثة",
+        car_cerato_desc: "تصميم انسيابي عصري وراحة ممتازة واستهلاك اقتصادي متطور، مجهزة بالكامل لمشاوير المطار والعمل والسياحة.",
+        car_sportage_silver_title: "كيا سبورتاج سيلفر إيديشن SUV",
+        car_sportage_silver_desc: "طراز فضي فاخر بلمسات كرومية أنيقة، مساحة واسعة للحقائب والركاب مع أداء قوي وثبات عالٍ.",
+        car_elantra_night_title: "هيونداي إلنترا نايت إيديشن",
+        car_elantra_night_desc: "طراز خاص بإضاءة ليلية وشخصية رياضية فخمة، عزل صوتي متفوق ومقاعد وثيرة لأطول الرحلات.",
+        car_hiace_highway_title: "تويوتا هاي إس إكسبريس للسفر",
+        car_hiace_highway_desc: "جاهزة لرحلات الطرق السريعة بين بورسعيد والقاهرة والمحافظات، ثبات فائق ومساحة أمتعة ضخمة.",
+        car_hiace_safari_title: "تويوتا هاي إس سفاري ورحلات",
+        car_hiace_safari_desc: "مجهزة بأحدث مقاعد الراحة للرحلات السياحية للمصايف والعين السخنة وشرم الشيخ مع شاشات ترفيه.",
+        car_merc_white_title: "مرسيدس AMG وايت إيديشن زفاف",
+        car_merc_white_desc: "درة أسطول الزفاف الأبيض أمام مقر سيف واي ببورسعيد، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.",
+        car_peugeot_red_title: "بيجو 508 جي تي أحمر ياقوتي",
+        car_peugeot_red_desc: "حضور لافت وجذاب بلون أحمر ملكي وبوكيه ورد أبيض فاخر وفتحة سقف بانورامية لصور زفاف لا تُنسى.",
+
+        spec_led: "إضاءة LED",
+        spec_sunroof: "فتحة سقف",
+        spec_4wd: "دفع رباعي",
+        spec_early: "وصول مبكر",
+        spec_screens: "شاشات ذكية",
         booking_privacy: "بياناتك آمنة وسريّة 100% ويتم إرسالها لممثل الحجز فوراً.",
         btn_confirm_whatsapp: "إرسال الحجز عبر واتساب (+201229242094)",
 
@@ -1847,6 +2119,42 @@
         field_name: "Full Name *",
         field_phone: "Phone / WhatsApp Number *",
         field_notes: "Additional Notes (Flight number, flowers, baggage count...)",
+        field_passengers: "Number of Passengers *",
+        field_luggage: "Luggage / Baggage Count *",
+        opt_pax_1: "1 Passenger",
+        opt_pax_2: "2 Passengers",
+        opt_pax_3: "3 Passengers",
+        opt_pax_4: "4 Passengers (Sedan Car)",
+        opt_pax_family: "5 to 7 Passengers (Family SUV / Carens)",
+        opt_pax_van: "8 to 14 Passengers (VIP Minibus)",
+        opt_pax_group: "More than 14 Passengers (Group)",
+        opt_luggage_0: "No large bags (Cabin / Hand luggage only)",
+        opt_luggage_1_2: "1 - 2 Travel Bags",
+        opt_luggage_3_4: "3 - 4 Travel Bags",
+        opt_luggage_5_7: "5 - 7 Large Bags",
+        opt_luggage_8_plus: "8+ Bags (Requires VIP Minibus)",
+        hero_cta_fleet: "Explore Our Fleet",
+
+        car_cerato_title: "Kia Cerato Modern Sedan",
+        car_cerato_desc: "Streamlined aerodynamic styling, superior cabin comfort, and full equipment for airport and executive travel.",
+        car_sportage_silver_title: "Kia Sportage Silver Edition SUV",
+        car_sportage_silver_desc: "Regal silver exterior with sleek chrome accents, generous cargo capacity, and outstanding road stability.",
+        car_elantra_night_title: "Hyundai Elantra Night Edition",
+        car_elantra_night_desc: "Distinctive night edition with LED accents, sporty demeanor, superior acoustic dampening, and plush seating.",
+        car_hiace_highway_title: "Toyota HiAce Highway Express",
+        car_hiace_highway_desc: "Engineered for swift highway transit between Port Said, Cairo, and all governorates with immense luggage capacity.",
+        car_hiace_safari_title: "Toyota HiAce Tourism Safari",
+        car_hiace_safari_desc: "Tailored for tourism journeys to Ain Sokhna, Sharm El Sheikh, and coastal getaways with VIP screens.",
+        car_merc_white_title: "Mercedes AMG White Edition Wedding",
+        car_merc_white_desc: "The bridal masterpiece stationed at Safeway headquarters, adorned with exquisite fresh floral arrangements.",
+        car_peugeot_red_title: "Peugeot 508 GT Ruby Red Wedding",
+        car_peugeot_red_desc: "Bold ruby red statement styling with white bridal flowers and panoramic glass roof for unforgettable wedding photos.",
+
+        spec_led: "Full LED",
+        spec_sunroof: "Sunroof",
+        spec_4wd: "4WD Drive",
+        spec_early: "Punctual Arrival",
+        spec_screens: "Smart Displays",
         booking_privacy: "Your data is 100% confidential and dispatched directly to operations.",
         btn_confirm_whatsapp: "Send Booking via WhatsApp (+201229242094)",
 
@@ -2082,7 +2390,9 @@
       const date = document.getElementById('tripDate').value;
       const time = document.getElementById('tripTime').value;
       const service = document.getElementById('serviceType').value;
-            const name = document.getElementById('customerName').value.trim();
+      const passengers = document.getElementById('passengersCount') ? document.getElementById('passengersCount').value : '4 أفراد';
+      const luggage = document.getElementById('luggageCount') ? document.getElementById('luggageCount').value : '3-4 حقائب';
+      const name = document.getElementById('customerName').value.trim();
       const phone = document.getElementById('customerPhone').value.trim();
       const notes = document.getElementById('specialNotes').value.trim();
 
@@ -2103,6 +2413,8 @@
                   `📅 *التاريخ:* ${date}\n` +
                   `⏰ *الوقت:* ${time}\n` +
                   `⭐ *نوع الخدمة:* ${service}\n` +
+                  `👥 *عدد الأفراد:* ${passengers}\n` +
+                  `🧳 *عدد الحقائب:* ${luggage}\n` +
                   (notes ? `📝 *ملاحظات خاصة:* ${notes}\n` : '') +
                   `━━━━━━━━━━━━━━━━━━━━\n` +
                   `✨ تم الإرسال من الموقع الإلكتروني الرسمي لشركة سيف واي ليموزين`;
@@ -2116,6 +2428,8 @@
                   `📅 *Date:* ${date}\n` +
                   `⏰ *Time:* ${time}\n` +
                   `⭐ *Service Category:* ${service}\n` +
+                  `👥 *Passengers:* ${passengers}\n` +
+                  `🧳 *Luggage:* ${luggage}\n` +
                   (notes ? `📝 *Special Requests:* ${notes}\n` : '') +
                   `━━━━━━━━━━━━━━━━━━━━\n` +
                   `✨ Sent via Safeway Limousine Official Website`;
