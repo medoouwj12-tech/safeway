@@ -1,6 +1,6 @@
 # Safeway Limousine (سيف واي ليموزين)
 
-> الموقع الرسمي لشركة **سيف واي ليموزين** (Safeway Travels & Limousine Services) ببورسعيد وجميع محافظات جمهورية مصر العربية.
+> الموقع الرسمي لشركة **سيف واي ليموزين** (Safeway Travels & Limousine Services) لخدمات ليموزين المطارات من المطارات لكافة محافظات جمهورية مصر العربية.
 
 ![Safeway Limousine](./images/safeway-logo.jpg)
 

@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Safeway Limousine | سيف واي ليموزين - لخدمات الليموزين ورجال الأعمال والزفاف</title>
-  <meta name="description" content="سيف واي ليموزين بورسعيد - أسطول سيارات حديثة 2022-2026 لخدمات استقبال المطار، زفاف العرايس، رجال الأعمال، وسفر المحافظات بأعلى درجات الرفاهية والأمان." />
-  <meta name="keywords" content="ليموزين بورسعيد, سيف واي ليموزين, ليموزين مطار القاهرة, سيارات زفاف بورسعيد, تأجير سيارات فارهة, Safeway Limousine, Port Said Limousine" />
+  <meta name="description" content="سيف واي ليموزين - أسطول سيارات حديثة 2022-2026 لخدمات ليموزين المطارات من المطارات لكافة محافظات مصر، زفاف العرايس، رجال الأعمال، وسفر المحافظات بأعلى درجات الرفاهية والأمان." />
+  <meta name="keywords" content="سيف واي ليموزين, ليموزين مطار القاهرة, ليموزين مطارات مصر, ليموزين برج العرب, سيارات زفاف, سفر المحافظات, تأجير سيارات فارهة, Safeway Limousine, Airport Limousine Egypt" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="./images/safeway-logo.jpg" />
@@ -153,7 +153,7 @@
         <span class="hidden sm:inline-block text-neutral-600">|</span>
         <span class="hidden sm:inline-flex items-center gap-1.5 text-neutral-300">
           <i class="fa-solid fa-location-dot text-brand-red"></i>
-          <span data-i18n="topbar_location">بورسعيد - وجميع محافظات مصر</span>
+          <span data-i18n="topbar_location">من المطارات لكافة محافظات مصر</span>
         </span>
       </div>
 
@@ -273,7 +273,7 @@
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-red-500/30 bg-red-950/40 backdrop-blur-md mb-6 animate-pulse-slow">
         <i class="fa-solid fa-crown text-amber-400 text-xs"></i>
         <span class="text-xs md:text-sm font-semibold text-red-200" data-i18n="hero_pill">
-          الخيار الأول لليموزين الفاخر في بورسعيد وجميع محافظات مصر
+          الخيار الأول لليموزين الفاخر من المطارات لكافة محافظات مصر
         </span>
       </div>
 
@@ -378,27 +378,30 @@
         <!-- Quick Route Chips -->
         <div class="mb-8">
           <label class="block text-xs font-bold text-brand-silver mb-3 flex items-center gap-2">
-            <i class="fa-solid fa-route text-brand-red"></i>
-            <span data-i18n="quick_routes_label">مسارات سريعة وشائعة (انقر للاختيار التلقائي):</span>
+            <i class="fa-solid fa-plane-departure text-brand-red"></i>
+            <span data-i18n="quick_routes_label">مسارات سريعة (من المطارات لكافة محافظات مصر):</span>
           </label>
           <div class="flex flex-wrap gap-2">
-            <button type="button" onclick="setQuickRoute('بورسعيد', 'مطار القاهرة الدولي (صالة 1, 2, 3)', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
-              ✈️ بورسعيد ⇋ مطار القاهرة
+            <button type="button" onclick="setQuickRoute('مطار القاهرة الدولي (صالة 1, 2, 3)', 'كافة محافظات مصر (حدد وجهتك)', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_cairo_airport">✈️ مطار القاهرة ⇋ كافة المحافظات</span>
             </button>
-            <button type="button" onclick="setQuickRoute('بورسعيد', 'مطار برج العرب الدولي - الإسكندرية', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
-              ✈️ بورسعيد ⇋ مطار برج العرب
+            <button type="button" onclick="setQuickRoute('مطار برج العرب الدولي - الإسكندرية', 'الإسكندرية وكافة المحافظات', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_borg_airport">✈️ مطار برج العرب ⇋ المحافظات</span>
             </button>
-            <button type="button" onclick="setQuickRoute('بورسعيد', 'الإسكندرية', 'intercity')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
-              🚗 بورسعيد ⇋ الإسكندرية
+            <button type="button" onclick="setQuickRoute('مطار سفنكس الدولي', 'القاهرة الكبرى / الجيزة / كافة المحافظات', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_sphinx_airport">✈️ مطار سفنكس ⇋ المحافظات</span>
             </button>
-            <button type="button" onclick="setQuickRoute('بورسعيد', 'القاهرة الكبرى / التجمع / المعادي / الشيخ زايد', 'intercity')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
-              🏙️ بورسعيد ⇋ القاهرة
+            <button type="button" onclick="setQuickRoute('مطار الغردقة / شرم الشيخ الدولي', 'كافة المحافظات والمنتجعات', 'airport')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_sharm_airport">✈️ مطارات الغردقة وشرم الشيخ</span>
             </button>
-            <button type="button" onclick="setQuickRoute('بورسعيد (استلام العروسين)', 'بورسعيد (قاعة الفرح والفوتوسيشن)', 'wedding')" class="text-xs px-3.5 py-1.5 rounded-full border border-red-600/40 bg-red-950/40 hover:border-brand-red text-red-200 transition-colors">
-              💍 زفاف العرايس داخل بورسعيد
+            <button type="button" onclick="setQuickRoute('من أي محافظة في مصر (حدد موقعك)', 'إلى أي محافظة أخرى (حدد وجهتك)', 'intercity')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_intercity">🚗 سفر بين جميع المحافظات</span>
             </button>
-            <button type="button" onclick="setQuickRoute('بورسعيد', 'مستشفيات وعيادات القاهرة / الإسكندرية', 'medical')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
-              🏥 مشوار كشف دكتور
+            <button type="button" onclick="setQuickRoute('استلام العروسين (حدد موقعك)', 'قاعة الفرح والفوتوسيشن', 'wedding')" class="text-xs px-3.5 py-1.5 rounded-full border border-red-600/40 bg-red-950/40 hover:border-brand-red text-red-200 transition-colors">
+              <span data-i18n="qr_wedding">💍 زفاف العرايس والمناسبات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('المنزل / أي محافظة', 'مستشفيات وعيادات القاهرة والمحافظات', 'medical')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_medical">🏥 مشوار كشف دكتور ومستشفيات</span>
             </button>
           </div>
         </div>
@@ -415,18 +418,24 @@
                 <span data-i18n="field_pickup">مكان الانطلاق / الاستلام *</span>
               </label>
               <div class="relative">
-                <input type="text" id="pickupLocation" required placeholder="مثال: بورسعيد - حي الشرق / مطار القاهرة" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+                <input type="text" id="pickupLocation" required placeholder="مثال: مطار القاهرة الدولي / المعادي / أي محافظة" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
               </div>
             </div>
 
             <!-- Dropoff Location -->
             <div>
-              <label for="dropoffLocation" class="block text-xs font-bold text-neutral-300 mb-2">
-                <i class="fa-solid fa-flag-checkered text-brand-red ml-1.5 mr-1.5"></i>
-                <span data-i18n="field_dropoff">مكان الوصول / الوجهة *</span>
-              </label>
+              <div class="flex items-center justify-between mb-2">
+                <label for="dropoffLocation" class="block text-xs font-bold text-neutral-300">
+                  <i class="fa-solid fa-flag-checkered text-brand-red ml-1.5 mr-1.5"></i>
+                  <span data-i18n="field_dropoff">مكان الوصول / الوجهة *</span>
+                </label>
+                <button type="button" onclick="swapLocations()" title="تبديل نقطة الاستلام والوصول" class="text-[11px] text-brand-silver hover:text-brand-red inline-flex items-center gap-1 transition-colors px-2 py-0.5 rounded-md bg-neutral-800/80 border border-neutral-700 hover:border-brand-red/50">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  <span data-i18n="btn_swap_locations">تبديل الاتجاه</span>
+                </button>
+              </div>
               <div class="relative">
-                <input type="text" id="dropoffLocation" required placeholder="مثال: مطار القاهرة صالة 3 / الإسكندرية" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+                <input type="text" id="dropoffLocation" required placeholder="مثال: مطار القاهرة صالة 3 / الإسكندرية / أي محافظة" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
               </div>
             </div>
 
@@ -849,7 +858,7 @@
                 <span class="text-xs text-brand-red font-semibold" data-i18n="cat_van">فان سياحية وسفر</span>
               </div>
               <p class="text-xs text-neutral-400 mb-4" data-i18n="car_hiace_highway_desc">
-                جاهزة لرحلات الطرق السريعة بين بورسعيد والقاهرة والمحافظات، ثبات فائق ومساحة أمتعة ضخمة.
+                جاهزة لرحلات الطرق السريعة بين المطارات والقاهرة وكافة المحافظات، ثبات فائق ومساحة أمتعة ضخمة.
               </p>
               <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
                 <div><i class="fa-solid fa-users text-brand-red mb-1 block"></i> <span data-i18n="spec_seats_14">14 راكب</span></div>
@@ -907,7 +916,7 @@
                 <span class="text-xs text-brand-red font-semibold" data-i18n="cat_wedding">زفاف ورجال أعمال</span>
               </div>
               <p class="text-xs text-neutral-400 mb-4" data-i18n="car_merc_white_desc">
-                درة أسطول الزفاف الأبيض أمام مقر سيف واي ببورسعيد، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.
+                درة أسطول الزفاف الأبيض لشركة سيف واي، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.
               </p>
               <div class="grid grid-cols-3 gap-2 py-3 border-y border-neutral-800 text-center text-xs text-neutral-300 mb-4">
                 <div><i class="fa-solid fa-user-tie text-brand-red mb-1 block"></i> <span data-i18n="spec_chauffeur">سائق ببدلة</span></div>
@@ -1004,7 +1013,7 @@
         </div>
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
           <span data-i18n="wedding_title_1">اجعل ليلة العمر أسطورية مع</span><br />
-          <span class="text-pure-red-gradient" data-i18n="wedding_title_2">أفخم سيارات الزفاف في بورسعيد</span>
+          <span class="text-pure-red-gradient" data-i18n="wedding_title_2">أفخم سيارات الزفاف والمناسبات في مصر</span>
         </h2>
         <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="wedding_desc">
           نوفر للعريس والعروس أرقى سيارات الزفاف المجهزة والمزينة بأحدث تصميمات باقات الورد الطبيعي، مع سائقين بمظهر رسمي أنيق والتزام تام بأدق مواعيد جلسات التصوير وقاعات الأفراح.
@@ -1065,7 +1074,7 @@
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between">
             <p class="text-xs text-neutral-300 mb-4 leading-relaxed" data-i18n="wedding_car2_desc">
-              الخيار الكلاسيكي الفاخر للعروس، مزينة ببوكيه ورد فخم بلون أبيض وأحمر متناسق، تم تصويرها أمام مقر الشركة الرسمي ببورسعيد.
+              الخيار الكلاسيكي الفاخر للعروس، مزينة ببوكيه ورد فخم بلون أبيض وأحمر متناسق، تم تصويرها أمام مقر الشركة الرسمي.
             </p>
             <div class="pt-3 border-t border-neutral-800 flex items-center justify-between">
               <span class="text-xs text-neutral-400 flex items-center gap-1">
@@ -1154,7 +1163,7 @@
           </div>
           <div>
             <h3 class="text-sm font-bold text-white mb-1" data-i18n="wedding_pillar4_title">باقات زفاف مرنة</h3>
-            <p class="text-xs text-neutral-400" data-i18n="wedding_pillar4_desc">عروض مخصصة بالساعات أو لليوم بالكامل، بأفضل الأسعار التنافسية ببورسعيد ومصر.</p>
+            <p class="text-xs text-neutral-400" data-i18n="wedding_pillar4_desc">عروض مخصصة بالساعات أو لليوم بالكامل، بأفضل الأسعار التنافسية في كافة محافظات مصر.</p>
           </div>
         </div>
 
@@ -1320,7 +1329,7 @@
             </div>
             <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_intercity_title">سفر محافظات مصر</h3>
             <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_intercity_desc">
-              سفر آمن وسريع من بورسعيد إلى كافة محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).
+              سفر آمن وسريع من وإلى كافة المطارات وجميع محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).
             </p>
           </div>
           <a href="#booking-section" onclick="prefillService('سفر محافظات وسياحة')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
@@ -1559,10 +1568,10 @@
           تواصل معنا وموقعنا | CONTACT & LOCATION
         </span>
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4" data-i18n="contact_heading">
-          نحن في خدمتكم دائماً ببورسعيد
+          نحن في خدمتكم دائماً لكافة المطارات والمحافظات
         </h2>
         <p class="text-neutral-400 text-sm sm:text-base leading-relaxed" data-i18n="contact_subheading">
-          تفضل بزيارة مقرنا في بورسعيد أو تواصل معنا هاتفياً أو عبر الواتساب للحجز الفوري والاستفسار عن العروض والأسعار.
+          تفضل بالتواصل معنا هاتفياً أو عبر الواتساب أو بزيارة مقرنا للحجز الفوري والاستفسار عن العروض والأسعار لكافة المحافظات.
         </p>
       </div>
 
@@ -1660,7 +1669,7 @@
               <img src="./images/safeway-logo.jpg" alt="Safeway" class="w-8 h-8 rounded object-cover border border-red-600/40" onerror="this.src='./safeway-logo.jpg'" />
               <div class="text-right">
                 <span class="block text-xs font-bold text-white">Safeway Limousine Port Said</span>
-                <span class="block text-[10px] text-neutral-400" data-i18n="map_coverage">خدمة تغطي كامل بورسعيد وجميع المحافظات</span>
+                <span class="block text-[10px] text-neutral-400" data-i18n="map_coverage">خدمة تغطي كافة المطارات وجميع محافظات مصر</span>
               </div>
             </div>
           </div>
@@ -1690,7 +1699,7 @@
             </span>
           </div>
           <p class="text-xs text-neutral-400 leading-relaxed" data-i18n="footer_about">
-            الشركة الرائدة في خدمات الليموزين، زفاف العرايس، استقبال المطارات، ورجال الأعمال في بورسعيد وجميع أنحاء جمهورية مصر العربية.
+            الشركة الرائدة في خدمات الليموزين، زفاف العرايس، استقبال المطارات، ورجال الأعمال من المطارات ولكافة أنحاء جمهورية مصر العربية.
           </p>
           <div class="flex items-center gap-3 pt-2">
             <a href="https://wa.me/201229242094" target="_blank" class="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 hover:border-emerald-500 hover:text-emerald-400 flex items-center justify-center transition-colors">
@@ -1760,7 +1769,7 @@
           &copy; <span id="currentYear"></span> Safeway Limousine (سيف واي ليموزين). <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span>
         </p>
         <p class="flex items-center gap-1.5">
-          <span data-i18n="footer_designed">تصميم وتطوير فاخر لخدمة عملاء بورسعيد ومصر</span>
+          <span data-i18n="footer_designed">تصميم وتطوير فاخر لخدمة عملاء المطارات وكافة محافظات مصر</span>
           <i class="fa-solid fa-heart text-brand-red text-xs"></i>
         </p>
       </div>
@@ -1830,7 +1839,7 @@
     const translations = {
       ar: {
         topbar_status: "متاحون 24 ساعة لاستقبال حجوزاتكم",
-        topbar_location: "بورسعيد - وجميع محافظات مصر",
+        topbar_location: "من المطارات لكافة محافظات مصر",
         brand_tagline: "لخدمات الليموزين ورجال الأعمال والزفاف",
         nav_home: "الرئيسية",
         nav_about: "من نحن",
@@ -1842,7 +1851,7 @@
         badge_special: "مميز",
         btn_book_now: "احجز الآن",
 
-        hero_pill: "الخيار الأول لليموزين الفاخر في بورسعيد وجميع محافظات مصر",
+        hero_pill: "الخيار الأول لليموزين الفاخر من المطارات لكافة محافظات مصر",
         hero_title_part1: "فخامة وأمان في كل رحلة مع",
         hero_subtitle: "استمتع بتجربة سفر فاخرة ومريحة بسيارات حديثة موديلات 2022 : 2026، مع نخبة من أمهر السائقين المحترفين ومتابعة لحظية بنظام GPS على مدار 24 ساعة لضمان سلامتك وراحتك التامة.",
         hero_cta_book: "احجز رحلتك الفاخرة الآن",
@@ -1861,7 +1870,15 @@
         booking_tag: "حجز فوري وذكي | SMART BOOKING ENGINE",
         booking_heading: "احجز رحلتك الآن في دقيقة واحدة",
         booking_subheading: "املأ تفاصيل رحلتك وسيتم تحويلك مباشرة إلى الواتساب برسالة حجز منسقة ومؤكدة مع فريق عمليات سيف واي ليموزين.",
-        quick_routes_label: "مسارات سريعة وشائعة (انقر للاختيار التلقائي):",
+        quick_routes_label: "مسارات سريعة (من المطارات لكافة محافظات مصر):",
+        qr_cairo_airport: "✈️ مطار القاهرة ⇋ كافة المحافظات",
+        qr_borg_airport: "✈️ مطار برج العرب ⇋ المحافظات",
+        qr_sphinx_airport: "✈️ مطار سفنكس ⇋ المحافظات",
+        qr_sharm_airport: "✈️ مطارات الغردقة وشرم الشيخ",
+        qr_intercity: "🚗 سفر بين جميع المحافظات",
+        qr_wedding: "💍 زفاف العرايس والمناسبات",
+        qr_medical: "🏥 مشوار كشف دكتور ومستشفيات",
+        btn_swap_locations: "تبديل الاتجاه",
         field_pickup: "مكان الانطلاق / الاستلام *",
         field_dropoff: "مكان الوصول / الوجهة *",
         field_date: "تاريخ الرحلة *",
@@ -1894,11 +1911,11 @@
         car_elantra_night_title: "هيونداي إلنترا نايت إيديشن",
         car_elantra_night_desc: "طراز خاص بإضاءة ليلية وشخصية رياضية فخمة، عزل صوتي متفوق ومقاعد وثيرة لأطول الرحلات.",
         car_hiace_highway_title: "تويوتا هاي إس إكسبريس للسفر",
-        car_hiace_highway_desc: "جاهزة لرحلات الطرق السريعة بين بورسعيد والقاهرة والمحافظات، ثبات فائق ومساحة أمتعة ضخمة.",
+        car_hiace_highway_desc: "جاهزة لرحلات الطرق السريعة بين المطارات والقاهرة وكافة المحافظات، ثبات فائق ومساحة أمتعة ضخمة.",
         car_hiace_safari_title: "تويوتا هاي إس سفاري ورحلات",
         car_hiace_safari_desc: "مجهزة بأحدث مقاعد الراحة للرحلات السياحية للمصايف والعين السخنة وشرم الشيخ مع شاشات ترفيه.",
         car_merc_white_title: "مرسيدس AMG وايت إيديشن زفاف",
-        car_merc_white_desc: "درة أسطول الزفاف الأبيض أمام مقر سيف واي ببورسعيد، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.",
+        car_merc_white_desc: "درة أسطول الزفاف الأبيض لشركة سيف واي، مزينة بأرقى الورود الطبيعية وأعلى درجات الفخامة.",
         car_peugeot_red_title: "بيجو 508 جي تي أحمر ياقوتي",
         car_peugeot_red_desc: "حضور لافت وجذاب بلون أحمر ملكي وبوكيه ورد أبيض فاخر وفتحة سقف بانورامية لصور زفاف لا تُنسى.",
 
@@ -1925,7 +1942,7 @@
 
         wedding_badge: "خدمات زفاف العرايس الفاخرة | WEDDING & BRIDAL SERVICES",
         wedding_title_1: "اجعل ليلة العمر أسطورية مع",
-        wedding_title_2: "أفخم سيارات الزفاف في بورسعيد",
+        wedding_title_2: "أفخم سيارات الزفاف والمناسبات في مصر",
         wedding_desc: "نوفر للعريس والعروس أرقى سيارات الزفاف المجهزة والمزينة بأحدث تصميمات باقات الورد الطبيعي، مع سائقين بمظهر رسمي أنيق والتزام تام بأدق مواعيد جلسات التصوير وقاعات الأفراح.",
         car_badge_vip: "VIP زفاف",
         car_badge_exclusive: "الأكثر طلباً للعرائس",
@@ -1933,7 +1950,7 @@
         wedding_car1_title: "مرسيدس C-Class برابوس إيديشن",
         wedding_car1_desc: "سيارة مرسيدس سوداء ملوكية بتصميم برابوس الرياضي، مزينة بأجمل تشكيلة زهور بيضاء على الكبوت والمقابض لحضور مهيب يخطف الأنظار.",
         wedding_car2_title: "مرسيدس AMG C-Class ناصعة البياض",
-        wedding_car2_desc: "الخيار الكلاسيكي الفاخر للعروس، مزينة ببوكيه ورد فخم بلون أبيض وأحمر متناسق، تم تصويرها أمام مقر الشركة الرسمي ببورسعيد.",
+        wedding_car2_desc: "الخيار الكلاسيكي الفاخر للعروس، مزينة ببوكيه ورد فخم بلون أبيض وأحمر متناسق، تم تصويرها أمام مقر الشركة الرسمي.",
         wedding_car3_title: "بيجو 508 جي تي - لون أحمر ياقوتي",
         wedding_car3_desc: "إطلالة جريئة وعصرية بلون أحمر ياقوتي ساحر مع بوكيه ورود أبيض ناصع، مجهزة بفتحة سقف بانوراما وإضاءات داخلية متميزة.",
         wedding_feature_photo: "جاهزة لجلسات الفوتوسيشن",
@@ -1949,7 +1966,7 @@
         wedding_pillar3_title: "أنظمة صوت وإضاءة VIP",
         wedding_pillar3_desc: "أنظمة صوتية عالية النقاء لتشغيل أغانيك المفضلة أثناء الزفة والتنقلات.",
         wedding_pillar4_title: "باقات زفاف مرنة",
-        wedding_pillar4_desc: "عروض مخصصة بالساعات أو لليوم بالكامل، بأفضل الأسعار التنافسية ببورسعيد ومصر.",
+        wedding_pillar4_desc: "عروض مخصصة بالساعات أو لليوم بالكامل، بأفضل الأسعار التنافسية في كافة محافظات مصر.",
 
         fleet_tag: "أسطول سيف واي | OUR PREMIUM FLEET",
         fleet_heading: "سيارات حديثة تلائم كافة المناسبات والرحلات",
@@ -2014,7 +2031,7 @@
         srv_corp_title: "ليموزين الشركات ورجال الأعمال",
         srv_corp_desc: "تنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين يجيدون اللغة الإنجليزية، وسيارات فاخرة تعكس المكانة المرموقة لشركتكم.",
         srv_intercity_title: "سفر محافظات مصر",
-        srv_intercity_desc: "سفر آمن وسريع من بورسعيد إلى كافة محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).",
+        srv_intercity_desc: "سفر آمن وسريع من وإلى كافة المطارات وجميع محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).",
         srv_medical_title: "مشاوير كشف الأطباء",
         srv_medical_desc: "تنقلات مريحة وهادئة من الباب إلى الباب لزيارة المراكز الطبية والعيادات المتخصصة في القاهرة والإسكندرية، مع انتظار المريض حتى إتمام الكشف والعودة.",
         srv_group_title: "رحلات سياحية وفانات VIP",
@@ -2052,8 +2069,8 @@
         why_6_desc: "أفضل معادلة بين السعر العادل والخدمة الـ VIP الفاخرة بدون أي رسوم خفية أو زيادات غير مبررة على الإطلاق.",
 
         contact_tag: "تواصل معنا وموقعنا | CONTACT & LOCATION",
-        contact_heading: "نحن في خدمتكم دائماً ببورسعيد",
-        contact_subheading: "تفضل بزيارة مقرنا في بورسعيد أو تواصل معنا هاتفياً أو عبر الواتساب للحجز الفوري والاستفسار عن العروض والأسعار.",
+        contact_heading: "نحن في خدمتكم دائماً لكافة المطارات والمحافظات",
+        contact_subheading: "تفضل بالتواصل معنا هاتفياً أو عبر الواتساب أو بزيارة مقرنا للحجز الفوري والاستفسار عن العروض والأسعار لكافة المحافظات.",
         contact_addr_title: "عنوان المقر الرئيسي",
         contact_addr_val: "بورسعيد، جمهورية مصر العربية",
         contact_addr_note: "مقر سيف واي لخدمات الليموزين والسياحة والزفاف",
@@ -2065,20 +2082,20 @@
         contact_hours_desc: "خدمة متاحة على مدار 24 ساعة يومياً، 7 أيام في الأسبوع، طوال أيام العطلات والمناسبات الرسمية.",
         map_title: "خريطة الموقع التفاعلية - بورسعيد، مصر",
         map_status: "المقر متاح للزيارة",
-        map_coverage: "خدمة تغطي كامل بورسعيد وجميع المحافظات",
+        map_coverage: "خدمة تغطي كافة المطارات وجميع محافظات مصر",
 
-        footer_about: "الشركة الرائدة في خدمات الليموزين، زفاف العرايس، استقبال المطارات، ورجال الأعمال في بورسعيد وجميع أنحاء جمهورية مصر العربية.",
+        footer_about: "الشركة الرائدة في خدمات الليموزين، زفاف العرايس، استقبال المطارات، ورجال الأعمال من المطارات ولكافة أنحاء جمهورية مصر العربية.",
         footer_links_title: "روابط سريعة",
         footer_services_title: "خدمات الليموزين",
         footer_contact_title: "الخط الساخن للحجز",
         footer_hotline_desc: "فريق خدمة العملاء جاهز لتأكيد حجوزاتكم والرد على كافة استفساراتكم 24 ساعة يومياً:",
         footer_rights: "جميع الحقوق محفوظة.",
-        footer_designed: "تصميم وتطوير فاخر لخدمة عملاء بورسعيد ومصر"
+        footer_designed: "تصميم وتطوير فاخر لخدمة عملاء المطارات وكافة محافظات مصر"
       },
 
       en: {
         topbar_status: "24/7 Availability for Bookings & Dispatch",
-        topbar_location: "Port Said & Across All Governorates of Egypt",
+        topbar_location: "From Airports to All Egyptian Governorates",
         brand_tagline: "Travels, Business Limousine & Bridal Wedding Services",
         nav_home: "Home",
         nav_about: "About Us",
@@ -2090,7 +2107,7 @@
         badge_special: "Special",
         btn_book_now: "Book Now",
 
-        hero_pill: "#1 Luxury Limousine Service in Port Said & Egypt",
+        hero_pill: "#1 Luxury Limousine Service from Airports to All Egyptian Governorates",
         hero_title_part1: "Experience Luxury Travel with",
         hero_subtitle: "Indulge in a supreme luxury travel experience with our 2022:2026 vehicle fleet, vetted professional English-fluent chauffeurs, and 24/7 active GPS tracking ensuring ultimate peace of mind.",
         hero_cta_book: "Book Your Luxury Ride",
@@ -2109,7 +2126,15 @@
         booking_tag: "SMART BOOKING ENGINE | 24/7 DISPATCH",
         booking_heading: "Reserve Your Limousine in 60 Seconds",
         booking_subheading: "Fill in your itinerary details and you will be routed instantly to WhatsApp with a pre-filled, confirmed booking message.",
-        quick_routes_label: "Popular Quick Routes (Click to Auto-Fill):",
+        quick_routes_label: "Popular Quick Routes (From Airports to All Governorates):",
+        qr_cairo_airport: "✈️ Cairo Airport ⇋ All Governorates",
+        qr_borg_airport: "✈️ Borg El Arab ⇋ Governorates",
+        qr_sphinx_airport: "✈️ Sphinx Airport ⇋ Governorates",
+        qr_sharm_airport: "✈️ Hurghada / Sharm Airports",
+        qr_intercity: "🚗 Travel Between All Governorates",
+        qr_wedding: "💍 Bridal & Wedding Limousines",
+        qr_medical: "🏥 Doctor & Hospital Visits",
+        btn_swap_locations: "Swap Route",
         field_pickup: "Pick-up Location *",
         field_dropoff: "Drop-off Destination *",
         field_date: "Trip Date *",
@@ -2142,11 +2167,11 @@
         car_elantra_night_title: "Hyundai Elantra Night Edition",
         car_elantra_night_desc: "Distinctive night edition with LED accents, sporty demeanor, superior acoustic dampening, and plush seating.",
         car_hiace_highway_title: "Toyota HiAce Highway Express",
-        car_hiace_highway_desc: "Engineered for swift highway transit between Port Said, Cairo, and all governorates with immense luggage capacity.",
+        car_hiace_highway_desc: "Engineered for swift highway transit between airports, Cairo, and all governorates with immense luggage capacity.",
         car_hiace_safari_title: "Toyota HiAce Tourism Safari",
         car_hiace_safari_desc: "Tailored for tourism journeys to Ain Sokhna, Sharm El Sheikh, and coastal getaways with VIP screens.",
         car_merc_white_title: "Mercedes AMG White Edition Wedding",
-        car_merc_white_desc: "The bridal masterpiece stationed at Safeway headquarters, adorned with exquisite fresh floral arrangements.",
+        car_merc_white_desc: "The bridal masterpiece of Safeway fleet, adorned with exquisite fresh floral arrangements.",
         car_peugeot_red_title: "Peugeot 508 GT Ruby Red Wedding",
         car_peugeot_red_desc: "Bold ruby red statement styling with white bridal flowers and panoramic glass roof for unforgettable wedding photos.",
 
@@ -2173,7 +2198,7 @@
 
         wedding_badge: "LUXURY BRIDAL & WEDDING SERVICES",
         wedding_title_1: "Make Your Wedding Unforgettable with",
-        wedding_title_2: "The Finest Wedding Limousines in Port Said",
+        wedding_title_2: "The Finest Wedding Limousines in Egypt",
         wedding_desc: "We present couples with top-tier luxury wedding limousines styled with natural floral arrangements, suited professional chauffeurs, and punctual arrival for photoshoots and wedding halls.",
         car_badge_vip: "VIP Wedding",
         car_badge_exclusive: "Bridal Favorite",
@@ -2197,7 +2222,7 @@
         wedding_pillar3_title: "VIP Sound & Lighting",
         wedding_pillar3_desc: "High-fidelity audio systems to play your custom wedding playlist during the procession.",
         wedding_pillar4_title: "Flexible Wedding Packages",
-        wedding_pillar4_desc: "Hourly or full-day bookings at the most competitive, transparent rates in Egypt.",
+        wedding_pillar4_desc: "Hourly or full-day bookings at the most competitive, transparent rates across Egypt.",
 
         fleet_tag: "OUR PREMIUM FLEET | MODEL YEARS 2022-2026",
         fleet_heading: "Modern Vehicles Suited for Every Journey",
@@ -2262,7 +2287,7 @@
         srv_corp_title: "Corporate & VIP Executive Travel",
         srv_corp_desc: "Executive transportation for visiting VIP delegations, executives, and corporate conferences with fluent English-speaking chauffeurs.",
         srv_intercity_title: "Intercity Egypt-Wide Travel",
-        srv_intercity_desc: "Comfortable and swift point-to-point journeys connecting Port Said to Cairo, Alexandria, Ismailia, Suez, Sinai, and the Red Sea.",
+        srv_intercity_desc: "Safe and swift transit to and from all airports and all Egyptian governorates (Cairo, Alexandria, Mansoura, Damietta, Red Sea, Sinai).",
         srv_medical_title: "Doctor & Medical Clinic Visits",
         srv_medical_desc: "Door-to-door patient-focused transit to specialized hospitals and clinics in Cairo & Alexandria, with standby waiting until you finish.",
         srv_group_title: "Group Tours & VIP Tourism Vans",
@@ -2300,8 +2325,8 @@
         why_6_desc: "The perfect equilibrium of luxury VIP service and transparent pricing with zero surprise surcharges.",
 
         contact_tag: "CONTACT & LOCATION | PORT SAID",
-        contact_heading: "Always at Your Service in Port Said",
-        contact_subheading: "Visit our physical branch in Port Said or reach out directly by phone or WhatsApp for prompt booking assistance.",
+        contact_heading: "Always at Your Service Across All Egyptian Governorates",
+        contact_subheading: "Contact us by phone, WhatsApp, or visit our headquarters for instant bookings and quotes across all governorates.",
         contact_addr_title: "Main Office Address",
         contact_addr_val: "Port Said Governorate, Egypt",
         contact_addr_note: "Safeway Travels & Limousine Headquarters",
@@ -2313,15 +2338,15 @@
         contact_hours_desc: "Open 24 hours a day, 7 days a week, including all official holidays and weekends.",
         map_title: "Interactive Location Map - Port Said, Egypt",
         map_status: "Office Open for Visits",
-        map_coverage: "Serving Port Said & All Egyptian Governorates",
+        map_coverage: "Serving All Egyptian Airports & Governorates",
 
-        footer_about: "The premier limousine service provider for airport transfers, bridal wedding limos, corporate travel, and nationwide intercity journeys across Egypt.",
+        footer_about: "The premier limousine service provider for airport transfers, bridal wedding limos, corporate travel, and nationwide intercity journeys from all airports across Egypt.",
         footer_links_title: "Quick Links",
         footer_services_title: "Our Services",
         footer_contact_title: "Booking Hotline",
         footer_hotline_desc: "Our dispatch team is ready 24/7 to confirm your reservations:",
         footer_rights: "All Rights Reserved.",
-        footer_designed: "Crafted with luxury excellence for Port Said & Egypt"
+        footer_designed: "Crafted with luxury excellence for Egyptian airports & all governorates"
       }
     };
 
@@ -2361,14 +2386,14 @@
       const notes = document.getElementById('specialNotes');
 
       if (lang === 'ar') {
-        if (pickup) pickup.placeholder = 'مثال: بورسعيد - حي الشرق / مطار القاهرة';
-        if (dropoff) dropoff.placeholder = 'مثال: مطار القاهرة صالة 3 / الإسكندرية';
+        if (pickup) pickup.placeholder = 'مثال: مطار القاهرة الدولي / المعادي / أي محافظة';
+        if (dropoff) dropoff.placeholder = 'مثال: مطار القاهرة صالة 3 / الإسكندرية / أي محافظة';
         if (name) name.placeholder = 'أدخل اسمك الكريم';
         if (phone) phone.placeholder = 'مثال: 01012345678';
         if (notes) notes.placeholder = 'أية طلبات خاصة إضافية ترغب في إبلاغنا بها...';
       } else {
-        if (pickup) pickup.placeholder = 'e.g., Port Said / Cairo Airport Terminal 3';
-        if (dropoff) dropoff.placeholder = 'e.g., Alexandria / New Cairo';
+        if (pickup) pickup.placeholder = 'e.g., Cairo Airport Terminal 3 / Alexandria / Any Governorate';
+        if (dropoff) dropoff.placeholder = 'e.g., Cairo Airport / Alexandria / Any Governorate';
         if (name) name.placeholder = 'Enter your full name';
         if (phone) phone.placeholder = 'e.g., +20 101 234 5678';
         if (notes) notes.placeholder = 'Any special requests (flight number, flowers, baggage...)...';
@@ -2443,6 +2468,17 @@
       window.open(whatsappUrl, '_blank');
     }
 
+    // Helper to swap pickup and dropoff locations
+    function swapLocations() {
+      const pickupEl = document.getElementById('pickupLocation');
+      const dropoffEl = document.getElementById('dropoffLocation');
+      if (pickupEl && dropoffEl) {
+        const temp = pickupEl.value;
+        pickupEl.value = dropoffEl.value;
+        dropoffEl.value = temp;
+      }
+    }
+
     // Helper to autofill route chips
     function setQuickRoute(pickup, dropoff, serviceCategory) {
       const pickupEl = document.getElementById('pickupLocation');
@@ -2453,13 +2489,13 @@
       if (dropoffEl) dropoffEl.value = dropoff;
 
       if (serviceCategory === 'wedding') {
-        if (serviceEl) serviceEl.value = 'زفاف العرايس والمناسبات';
+        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'زفاف العرايس والمناسبات' : 'Bridal & Wedding Limousine';
       } else if (serviceCategory === 'airport') {
-        if (serviceEl) serviceEl.value = 'استقبال وتوديع مطارات';
+        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'استقبال وتوديع مطارات' : 'Airport Meet & Greet Transfer';
       } else if (serviceCategory === 'intercity') {
-        if (serviceEl) serviceEl.value = 'سفر محافظات وسياحة';
+        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'سفر محافظات وسياحة' : 'Intercity City-to-City Travel';
       } else if (serviceCategory === 'medical') {
-        if (serviceEl) serviceEl.value = 'مشاوير كشف أطباء';
+        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'مشاوير كشف أطباء' : 'Medical Clinic & Doctor Visit';
       }
 
       const bookingSec = document.getElementById('booking-section');
