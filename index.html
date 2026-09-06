@@ -155,6 +155,11 @@
           <i class="fa-solid fa-location-dot text-brand-red"></i>
           <span data-i18n="topbar_location">من المطارات لكافة محافظات مصر</span>
         </span>
+        <span class="hidden md:inline-block text-neutral-600">|</span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-neutral-300">
+          <i class="fa-solid fa-handshake text-brand-red"></i>
+          <span data-i18n="topbar_corporate">تعاقدات خاصة مع الشركات</span>
+        </span>
       </div>
 
       <div class="flex items-center gap-4 text-xs">
@@ -399,6 +404,9 @@
             </button>
             <button type="button" onclick="setQuickRoute('استلام العروسين (حدد موقعك)', 'قاعة الفرح والفوتوسيشن', 'wedding')" class="text-xs px-3.5 py-1.5 rounded-full border border-brand-red/30 bg-neutral-900/80 hover:border-brand-red text-neutral-200 transition-colors">
               <span data-i18n="qr_wedding">💍 زفاف العرايس والمناسبات</span>
+            </button>
+            <button type="button" onclick="setQuickRoute('مقر الشركة / المؤسسة', 'كافة المطارات والمحافظات والمؤتمرات', 'corporate')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
+              <span data-i18n="qr_corporate">🏢 تعاقدات خاصة مع الشركات</span>
             </button>
             <button type="button" onclick="setQuickRoute('المنزل / أي محافظة', 'مستشفيات وعيادات القاهرة والمحافظات', 'medical')" class="text-xs px-3.5 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/80 hover:border-brand-red hover:bg-neutral-800 text-neutral-300 transition-colors">
               <span data-i18n="qr_medical">🏥 مشوار كشف دكتور ومستشفيات</span>
@@ -1243,16 +1251,19 @@
         <!-- Service 3: Corporate & VIP Executive -->
         <div class="glass-card rounded-2xl p-7 hover-glow transition-all flex flex-col justify-between">
           <div>
-            <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl mb-6 shadow-sm">
-              <i class="fa-solid fa-briefcase"></i>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-brand-red text-2xl shadow-sm">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <span class="text-[11px] font-bold px-3 py-1 rounded-full bg-brand-red/10 text-brand-red border border-brand-red/25" data-i18n="badge_corporate">تعاقدات حصرية</span>
             </div>
-            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_corp_title">ليموزين الشركات ورجال الأعمال</h3>
+            <h3 class="text-xl font-extrabold text-white mb-3" data-i18n="srv_corp_title">تعاقدات خاصة مع الشركات ورجال الأعمال</h3>
             <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-6" data-i18n="srv_corp_desc">
-              تنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين يجيدون اللغة الإنجليزية، وسيارات فاخرة تعكس المكانة المرموقة لشركتكم.
+              عقود سنوية وشهرية مخصصة للشركات والمؤسسات بأسعار تفضيلية، وتنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين بلباقة عالية ولغة إنجليزية.
             </p>
           </div>
-          <a href="#booking-section" onclick="prefillService('ليموزين رجال أعمال وشركات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
-            <span data-i18n="btn_book_service">حجز رجال الأعمال</span>
+          <a href="#booking-section" onclick="prefillService('تعاقدات خاصة مع الشركات')" class="text-xs font-bold text-brand-red hover:text-white flex items-center gap-2 transition-colors">
+            <span data-i18n="btn_book_corp">طلب تعاقد شركات</span>
             <i class="fa-solid fa-arrow-left text-[10px]"></i>
           </a>
         </div>
@@ -1669,7 +1680,7 @@
           <ul class="space-y-2.5">
             <li><a href="#booking-section" onclick="prefillService('استقبال وتوديع مطارات')" class="hover:text-brand-red transition-colors" data-i18n="srv_airport_title">استقبال مطار القاهرة وبرج العرب</a></li>
             <li><a href="#wedding" class="hover:text-brand-red transition-colors" data-i18n="srv_wedding_title">زفاف العرايس والمناسبات</a></li>
-            <li><a href="#booking-section" onclick="prefillService('ليموزين رجال أعمال وشركات')" class="hover:text-brand-red transition-colors" data-i18n="srv_corp_title">ليموزين الشركات ورجال الأعمال</a></li>
+            <li><a href="#booking-section" onclick="prefillService('تعاقدات خاصة مع الشركات')" class="hover:text-brand-red transition-colors" data-i18n="srv_corp_title">تعاقدات خاصة مع الشركات ورجال الأعمال</a></li>
             <li><a href="#booking-section" onclick="prefillService('سفر محافظات وسياحة')" class="hover:text-brand-red transition-colors" data-i18n="srv_intercity_title">سفر جميع محافظات مصر</a></li>
             <li><a href="#booking-section" onclick="prefillService('مشاوير كشف أطباء')" class="hover:text-brand-red transition-colors" data-i18n="srv_medical_title">مشاوير كشف الأطباء والعيادات</a></li>
             <li><a href="#fleet" onclick="filterFleet('van')" class="hover:text-brand-red transition-colors" data-i18n="srv_group_title">فانات سياحية VIP 14 راكب</a></li>
@@ -1776,6 +1787,7 @@
       ar: {
         topbar_status: "متاحون 24 ساعة لاستقبال حجوزاتكم",
         topbar_location: "من المطارات لكافة محافظات مصر",
+        topbar_corporate: "تعاقدات خاصة مع الشركات",
         brand_tagline: "لخدمات الليموزين ورجال الأعمال والزفاف",
         nav_home: "الرئيسية",
         nav_about: "من نحن",
@@ -1813,6 +1825,7 @@
         qr_sharm_airport: "✈️ مطارات الغردقة وشرم الشيخ",
         qr_intercity: "🚗 سفر بين جميع المحافظات",
         qr_wedding: "💍 زفاف العرايس والمناسبات",
+        qr_corporate: "🏢 تعاقدات خاصة مع الشركات",
         qr_medical: "🏥 مشوار كشف دكتور ومستشفيات",
         btn_swap_locations: "تبديل الاتجاه",
         field_pickup: "مكان الانطلاق / الاستلام *",
@@ -1969,8 +1982,10 @@
         srv_airport_desc: "خدمة استقبال راقية من وإلى مطار القاهرة، مطار برج العرب، مطار سفنكس، ومطار شرم الشيخ مع متابعة مواعيد رحلات الطيران واستقبال العملاء بلافتة الاسم والترحيب.",
         srv_wedding_title: "زفاف العرايس والمناسبات",
         srv_wedding_desc: "أسطول زفاف متكامل من أحدث سيارات المرسيدس والبيجو والسيدان، تزيين بأرقى الورود الطبيعية، وسائقين بزي رسمي كامل لجعل ليلة زفافكم ذكرى خالدة.",
-        srv_corp_title: "ليموزين الشركات ورجال الأعمال",
-        srv_corp_desc: "تنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين يجيدون اللغة الإنجليزية، وسيارات فاخرة تعكس المكانة المرموقة لشركتكم.",
+        srv_corp_title: "تعاقدات خاصة مع الشركات ورجال الأعمال",
+        srv_corp_desc: "عقود سنوية وشهرية مخصصة للشركات والمؤسسات بأسعار تفضيلية، وتنقلات تنفيذية لكبار الضيوف والوفود والمؤتمرات مع سائقين بلباقة عالية ولغة إنجليزية.",
+        btn_book_corp: "طلب تعاقد شركات",
+        badge_corporate: "تعاقدات حصرية",
         srv_intercity_title: "سفر محافظات مصر",
         srv_intercity_desc: "سفر آمن وسريع من وإلى كافة المطارات وجميع محافظات الجمهورية (القاهرة، الإسكندرية، الإسماعيلية، السويس، المنصورة، دمياط، البحر الأحمر، وسيناء).",
         srv_medical_title: "مشاوير كشف الأطباء",
@@ -2037,6 +2052,7 @@
       en: {
         topbar_status: "24/7 Availability for Bookings & Dispatch",
         topbar_location: "From Airports to All Egyptian Governorates",
+        topbar_corporate: "Special Corporate Contracts",
         brand_tagline: "Travels, Business Limousine & Bridal Wedding Services",
         nav_home: "Home",
         nav_about: "About Us",
@@ -2074,6 +2090,7 @@
         qr_sharm_airport: "✈️ Hurghada / Sharm Airports",
         qr_intercity: "🚗 Travel Between All Governorates",
         qr_wedding: "💍 Bridal & Wedding Limousines",
+        qr_corporate: "🏢 Corporate Contracts",
         qr_medical: "🏥 Doctor & Hospital Visits",
         btn_swap_locations: "Swap Route",
         field_pickup: "Pick-up Location *",
@@ -2230,8 +2247,10 @@
         srv_airport_desc: "Punctual transfers to/from Cairo International, Borg El Arab, Sphinx, and Sharm El Sheikh with flight tracking and personalized name sign greetings.",
         srv_wedding_title: "Bridal & Wedding Limousines",
         srv_wedding_desc: "A fleet of pristine Mercedes, Peugeot, and luxury sedans adorned with fine flowers and steered by formally dressed chauffeurs.",
-        srv_corp_title: "Corporate & VIP Executive Travel",
-        srv_corp_desc: "Executive transportation for visiting VIP delegations, executives, and corporate conferences with fluent English-speaking chauffeurs.",
+        srv_corp_title: "Special Corporate Contracts & Business Travel",
+        srv_corp_desc: "Exclusive monthly and annual contracts for corporate entities and enterprises, executive delegations, and conference transit with English-fluent chauffeurs.",
+        btn_book_corp: "Corporate Contract Inquiry",
+        badge_corporate: "Exclusive Contracts",
         srv_intercity_title: "Intercity Egypt-Wide Travel",
         srv_intercity_desc: "Safe and swift transit to and from all airports and all Egyptian governorates (Cairo, Alexandria, Mansoura, Damietta, Red Sea, Sinai).",
         srv_medical_title: "Doctor & Medical Clinic Visits",
@@ -2453,12 +2472,19 @@
       if (dropoffEl) dropoffEl.value = dropoff;
 
       if (serviceEl) {
-        if (serviceCategory === 'wedding') {
+        if (serviceCategory === 'wedding' || serviceCategory === 'corporate') {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
         } else if (serviceCategory === 'medical') {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
         } else {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+        }
+      }
+
+      if (serviceCategory === 'corporate') {
+        const notesEl = document.getElementById('specialNotes');
+        if (notesEl && !notesEl.value) {
+          notesEl.value = currentLang === 'ar' ? 'الخدمة المطلوبة: تعاقدات خاصة مع الشركات' : 'Requested Service: Special Corporate Contracts';
         }
       }
 
@@ -2494,7 +2520,7 @@
       const serviceEl = document.getElementById('serviceType');
       const notesEl = document.getElementById('specialNotes');
       if (serviceEl) {
-        if (serviceName && serviceName.includes('زفاف')) {
+        if (serviceName && (serviceName.includes('زفاف') || serviceName.includes('شركات') || serviceName.includes('تعاقد'))) {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
         } else if (serviceName && (serviceName.includes('كشف') || serviceName.includes('أطباء'))) {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
