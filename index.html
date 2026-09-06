@@ -7,7 +7,16 @@
   <meta name="description" content="سيف واي ليموزين - أسطول سيارات حديثة 2022-2026 لخدمات ليموزين المطارات من المطارات لكافة محافظات مصر، زفاف العرايس، رجال الأعمال، وسفر المحافظات بأعلى درجات الرفاهية والأمان." />
   <meta name="keywords" content="سيف واي ليموزين, ليموزين مطار القاهرة, ليموزين مطارات مصر, ليموزين برج العرب, سيارات زفاف, سفر المحافظات, تأجير سيارات فارهة, Safeway Limousine, Airport Limousine Egypt" />
 
-  <!-- Favicon -->
+  <!-- PWA & Mobile Web App Meta Tags -->
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Safeway" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="./images/favicon-64.png" />
   <link rel="icon" type="image/jpeg" href="./images/safeway-logo.jpg" />
 
   <!-- Google Fonts: Montserrat & Cairo -->
@@ -214,6 +223,12 @@
         <!-- Right Side: Language Switcher & Quick CTA -->
         <div class="flex items-center gap-3">
           
+          <!-- Install App Button -->
+          <button id="installPwaBtn" onclick="installPWA()" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/90 hover:border-brand-red hover:bg-neutral-800 transition-all text-xs font-semibold text-neutral-200" title="تثبيت التطبيق على جهازك">
+            <i class="fa-solid fa-mobile-screen-button text-brand-red"></i>
+            <span data-i18n="btn_install_app">تثبيت التطبيق</span>
+          </button>
+
           <!-- Language Toggle Button -->
           <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-neutral-700 bg-neutral-900/90 hover:border-brand-red hover:bg-neutral-800 transition-all text-xs font-semibold text-neutral-200" title="Switch Language / تغيير اللغة">
             <i class="fa-solid fa-globe text-brand-red text-sm"></i>
@@ -248,6 +263,15 @@
       <a href="#why-us" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_why_us">لماذا نحن</a>
       <a href="#contact" onclick="closeMobileMenu()" class="block py-2 px-3 rounded-md hover:bg-neutral-800 text-neutral-200 font-medium" data-i18n="nav_contact">اتصل بنا</a>
       
+      <!-- Mobile Install App Button -->
+      <button onclick="closeMobileMenu(); installPWA();" class="w-full text-right py-2.5 px-3 rounded-lg bg-neutral-900/90 border border-neutral-800 text-neutral-200 hover:text-white flex items-center justify-between transition-colors">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-download text-brand-red"></i>
+          <span data-i18n="btn_install_app_mobile">تثبيت تطبيق سيف واي</span>
+        </span>
+        <span class="text-[10px] bg-brand-red/20 text-brand-red px-2 py-0.5 rounded font-bold">PWA APP</span>
+      </button>
+
       <div class="pt-3 border-t border-neutral-800 flex flex-col gap-2">
         <a href="#booking-section" onclick="closeMobileMenu()" class="w-full text-center bg-brand-red text-white py-3 rounded-lg font-bold shadow-luxury-red" data-i18n="btn_book_now">احجز الآن</a>
         <a href="tel:01229242094" class="w-full text-center border border-neutral-700 bg-neutral-900 text-neutral-200 py-2.5 rounded-lg text-sm font-semibold flex items-center justify-center gap-2">
@@ -1724,11 +1748,86 @@
     </div>
   </footer>
 
+  <!-- ============================================================ -->
+  <!-- MOBILE BOTTOM APP NAVIGATION BAR (FOR NATIVE APP FEEL)       -->
+  <!-- ============================================================ -->
+  <nav id="mobileBottomNav" class="fixed bottom-0 left-0 right-0 z-40 bg-neutral-950/95 backdrop-blur-xl border-t border-neutral-800/80 px-2 py-2 flex items-center justify-around text-neutral-400 text-[10px] sm:hidden shadow-2xl safe-area-bottom">
+    <a href="#home" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-house text-base"></i>
+      <span data-i18n="nav_home">الرئيسية</span>
+    </a>
+    <a href="#fleet" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-car text-base"></i>
+      <span data-i18n="nav_fleet">السيارات</span>
+    </a>
+    <!-- Central Prominent Book Button -->
+    <a href="#booking-section" class="flex flex-col items-center -mt-6 group">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brand-red to-brand-redDark text-white flex items-center justify-center shadow-luxury-red border-2 border-neutral-950 group-active:scale-95 transition-transform">
+        <i class="fa-solid fa-calendar-check text-base"></i>
+      </div>
+      <span class="mt-0.5 font-bold text-white text-[10px]" data-i18n="btn_book_now">احجز الآن</span>
+    </a>
+    <a href="#wedding" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-gem text-base"></i>
+      <span data-i18n="nav_wedding">الزفاف</span>
+    </a>
+    <button onclick="installPWA()" class="flex flex-col items-center gap-1 hover:text-brand-red active:text-brand-red transition-colors">
+      <i class="fa-solid fa-download text-base text-brand-red"></i>
+      <span data-i18n="nav_app">تثبيت التطبيق</span>
+    </button>
+  </nav>
+
+  <!-- Smart PWA Install Banner for Mobile -->
+  <div id="pwaInstallBanner" class="fixed top-24 left-4 right-4 z-50 max-w-md mx-auto hidden transition-all duration-500 transform -translate-y-4 opacity-0">
+    <div class="glass-card rounded-2xl p-4 border border-brand-red/40 bg-neutral-950/95 shadow-2xl flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <img src="./images/icon-192.png" alt="Safeway App" class="w-12 h-12 rounded-xl object-contain border border-neutral-800 shrink-0 shadow" />
+        <div>
+          <h4 class="text-xs font-bold text-white flex items-center gap-1.5">
+            <span data-i18n="pwa_title">تطبيق سيف واي ليموزين</span>
+            <span class="text-[9px] bg-brand-red/20 text-brand-red px-1.5 py-0.5 rounded font-black">APP</span>
+          </h4>
+          <p class="text-[11px] text-neutral-400 mt-0.5" data-i18n="pwa_desc">ثبت التطبيق على هاتفك لحجز أسرع وتجربة سلسة</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="installPWA()" class="px-3.5 py-1.5 rounded-lg bg-brand-red text-white text-xs font-bold shadow hover:brightness-110 active:scale-95 transition-all" data-i18n="btn_install">تثبيت</button>
+        <button onclick="dismissPwaBanner()" class="text-neutral-400 hover:text-white p-1 text-sm"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- iOS PWA Instructions Modal -->
+  <div id="iosInstallModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity duration-300">
+    <div class="glass-card max-w-sm w-full p-6 rounded-2xl border border-neutral-800 bg-neutral-950 text-center relative animate-float">
+      <button onclick="closeIosModal()" class="absolute top-4 left-4 text-neutral-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+      <img src="./images/icon-192.png" alt="Safeway" class="w-16 h-16 rounded-2xl mx-auto mb-4 border border-neutral-800 shadow-lg" />
+      <h3 class="text-base font-extrabold text-white mb-2" data-i18n="ios_title">تثبيت تطبيق سيف واي على آيفون</h3>
+      <p class="text-xs text-neutral-400 leading-relaxed mb-5" data-i18n="ios_desc">
+        للحصول على تجربة التطبيق الكاملة وحجز أسهل في أي وقت:
+      </p>
+      <div class="space-y-3 text-xs text-neutral-300 text-right bg-neutral-900/80 p-4 rounded-xl border border-neutral-800 mb-6">
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red font-bold flex items-center justify-center shrink-0">1</span>
+          <span data-i18n="ios_step_1">اضغط على زر المشاركة <i class="fa-solid fa-arrow-up-from-bracket text-brand-red mx-1"></i> أسفل Safari.</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red font-bold flex items-center justify-center shrink-0">2</span>
+          <span data-i18n="ios_step_2">مرر للأسفل واختر <strong>"إضافة إلى الشاشة الرئيسية"</strong> ➕.</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red font-bold flex items-center justify-center shrink-0">3</span>
+          <span data-i18n="ios_step_3">اضغط على <strong>"إضافة" (Add)</strong> في أعلى الشاشة.</span>
+        </div>
+      </div>
+      <button onclick="closeIosModal()" class="w-full py-2.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-bold transition-colors" data-i18n="btn_got_it">فهمت ذلك</button>
+    </div>
+  </div>
 
   <!-- ============================================================ -->
   <!-- FLOATING QUICK ACTIONS (WHATSAPP & PHONE & BACK TO TOP)      -->
   <!-- ============================================================ -->
-  <div class="fixed bottom-6 left-6 z-50 flex flex-col items-center gap-3">
+  <div class="fixed bottom-20 sm:bottom-6 left-4 sm:left-6 z-40 flex flex-col items-center gap-3">
     
     <!-- Back to Top Button -->
     <button id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="opacity-0 pointer-events-none transition-all duration-300 w-11 h-11 rounded-full bg-neutral-900 border border-neutral-700 text-neutral-200 hover:bg-brand-red hover:text-white flex items-center justify-center shadow-lg" title="العودة للأعلى">
@@ -2046,7 +2145,20 @@
         footer_contact_title: "الخط الساخن للحجز",
         footer_hotline_desc: "فريق خدمة العملاء جاهز لتأكيد حجوزاتكم والرد على كافة استفساراتكم 24 ساعة يومياً:",
         footer_rights: "جميع الحقوق محفوظة.",
-        footer_designed: "تصميم وتطوير فاخر لخدمة عملاء المطارات وكافة محافظات مصر"
+        footer_designed: "تصميم وتطوير فاخر لخدمة عملاء المطارات وكافة محافظات مصر",
+
+        btn_install_app: "تثبيت التطبيق",
+        btn_install_app_mobile: "تثبيت تطبيق سيف واي",
+        nav_app: "تثبيت التطبيق",
+        pwa_title: "تطبيق سيف واي ليموزين",
+        pwa_desc: "ثبت التطبيق على هاتفك لحجز أسرع وتجربة سلسة",
+        btn_install: "تثبيت",
+        ios_title: "تثبيت تطبيق سيف واي على آيفون",
+        ios_desc: "للحصول على تجربة التطبيق الكاملة وحجز أسهل في أي وقت:",
+        ios_step_1: "اضغط على زر المشاركة أسفل Safari.",
+        ios_step_2: "مرر للأسفل واختر \"إضافة إلى الشاشة الرئيسية\" ➕.",
+        ios_step_3: "اضغط على \"إضافة\" (Add) في أعلى الشاشة.",
+        btn_got_it: "فهمت ذلك"
       },
 
       en: {
@@ -2311,7 +2423,20 @@
         footer_contact_title: "Booking Hotline",
         footer_hotline_desc: "Our dispatch team is ready 24/7 to confirm your reservations:",
         footer_rights: "All Rights Reserved.",
-        footer_designed: "Crafted with luxury excellence for Egyptian airports & all governorates"
+        footer_designed: "Crafted with luxury excellence for Egyptian airports & all governorates",
+
+        btn_install_app: "Install App",
+        btn_install_app_mobile: "Install Safeway App",
+        nav_app: "Install App",
+        pwa_title: "Safeway Limousine App",
+        pwa_desc: "Install on your phone for faster bookings & a smooth experience",
+        btn_install: "Install",
+        ios_title: "Add Safeway App to iPhone",
+        ios_desc: "Get the full app experience and easier bookings anytime:",
+        ios_step_1: "Tap the Share button at the bottom of Safari.",
+        ios_step_2: "Scroll down and tap \"Add to Home Screen\" ➕.",
+        ios_step_3: "Tap \"Add\" at the top right of the screen.",
+        btn_got_it: "Got It!"
       }
     };
 
@@ -2674,7 +2799,121 @@
 
       // Initialize language
       setLanguage(currentLang);
+
+      // -------------------------------------------------------------
+      // PWA INSTALL BANNER: Show after 4 seconds if not dismissed
+      // -------------------------------------------------------------
+      const bannerDismissed = localStorage.getItem('pwa_banner_dismissed');
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+      if (!bannerDismissed && !isStandalone) {
+        setTimeout(() => {
+          const banner = document.getElementById('pwaInstallBanner');
+          if (banner) {
+            banner.classList.remove('hidden');
+            requestAnimationFrame(() => {
+              banner.classList.remove('-translate-y-4', 'opacity-0');
+            });
+          }
+        }, 4000);
+      }
     });
+
+    // -------------------------------------------------------------
+    // 9. PWA: beforeinstallprompt CAPTURE
+    // -------------------------------------------------------------
+    let deferredInstallPrompt = null;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      // Show the desktop install button
+      const installBtn = document.getElementById('installPwaBtn');
+      if (installBtn) installBtn.classList.remove('hidden');
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredInstallPrompt = null;
+      dismissPwaBanner();
+      const installBtn = document.getElementById('installPwaBtn');
+      if (installBtn) installBtn.classList.add('hidden');
+    });
+
+    // -------------------------------------------------------------
+    // 10. PWA INSTALL FUNCTION
+    // -------------------------------------------------------------
+    function installPWA() {
+      // iOS Safari detection
+      const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+      const isInStandaloneMode = window.navigator.standalone;
+
+      if (isIos && !isInStandaloneMode) {
+        // Show iOS instructions modal
+        const modal = document.getElementById('iosInstallModal');
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+        return;
+      }
+
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        deferredInstallPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            dismissPwaBanner();
+          }
+          deferredInstallPrompt = null;
+        });
+      } else {
+        // Fallback: show iOS modal or a helpful hint
+        const isAndroid = /android/i.test(navigator.userAgent);
+        if (isAndroid) {
+          alert(currentLang === 'ar'
+            ? 'لتثبيت التطبيق: افتح قائمة المتصفح ← اختر "إضافة إلى الشاشة الرئيسية"'
+            : 'To install: Open browser menu → tap "Add to Home Screen"');
+        } else {
+          const modal = document.getElementById('iosInstallModal');
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+          }
+        }
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 11. DISMISS PWA BANNER
+    // -------------------------------------------------------------
+    function dismissPwaBanner() {
+      const banner = document.getElementById('pwaInstallBanner');
+      if (banner) {
+        banner.classList.add('-translate-y-4', 'opacity-0');
+        setTimeout(() => banner.classList.add('hidden'), 400);
+      }
+      localStorage.setItem('pwa_banner_dismissed', '1');
+    }
+
+    // -------------------------------------------------------------
+    // 12. CLOSE iOS MODAL
+    // -------------------------------------------------------------
+    function closeIosModal() {
+      const modal = document.getElementById('iosInstallModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 13. SERVICE WORKER REGISTRATION
+    // -------------------------------------------------------------
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('✅ Safeway SW registered:', reg.scope))
+          .catch(err => console.warn('SW registration failed:', err));
+      });
+    }
   </script>
 
 </body>
