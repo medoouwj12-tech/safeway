@@ -461,18 +461,16 @@
               <input type="time" id="tripTime" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors" />
             </div>
 
-            <!-- Service Type -->
+            <!-- Trip / Service Type -->
             <div>
               <label for="serviceType" class="block text-xs font-bold text-neutral-300 mb-2">
-                <i class="fa-solid fa-briefcase text-brand-red ml-1.5 mr-1.5"></i>
-                <span data-i18n="field_service_type">نوع الخدمة *</span>
+                <i class="fa-solid fa-arrows-split-up-and-left text-brand-red ml-1.5 mr-1.5"></i>
+                <span data-i18n="field_service_type">نوع الرحلة *</span>
               </label>
               <select id="serviceType" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
-                <option value="استقبال وتوديع مطارات" data-i18n="opt_srv_airport">استقبال وتوديع مطارات</option>
-                <option value="زفاف العرايس والمناسبات" data-i18n="opt_srv_wedding">زفاف العرايس والمناسبات</option>
-                <option value="سفر محافظات وسياحة" data-i18n="opt_srv_intercity">سفر محافظات وسياحة</option>
-                <option value="ليموزين رجال أعمال وشركات" data-i18n="opt_srv_corporate">ليموزين رجال أعمال وشركات</option>
-                <option value="مشاوير كشف أطباء" data-i18n="opt_srv_medical">مشاوير كشف أطباء</option>
+                <option value="ذهاب أو عودة" data-i18n="opt_trip_oneway">ذهاب أو عودة</option>
+                <option value="ذهاب وعودة وانتظار" data-i18n="opt_trip_round_wait">ذهاب وعودة وانتظار</option>
+                <option value="ذهاب وعودة وتحركات" data-i18n="opt_trip_round_moves">ذهاب وعودة وتحركات</option>
               </select>
             </div>
 
@@ -490,10 +488,17 @@
                 <option value="1 فرد" data-i18n="opt_pax_1">1 فرد</option>
                 <option value="2 أفراد" data-i18n="opt_pax_2">2 أفراد</option>
                 <option value="3 أفراد" data-i18n="opt_pax_3">3 أفراد</option>
-                <option value="4 أفراد" data-i18n="opt_pax_4" selected>4 أفراد (سيارة صالون / سيدان)</option>
-                <option value="5 إلى 7 أفراد" data-i18n="opt_pax_family">5 إلى 7 أفراد (عائلي / SUV)</option>
-                <option value="8 إلى 14 فرد" data-i18n="opt_pax_van">8 إلى 14 فرد (فان سياحي VIP)</option>
-                <option value="أكثر من 14 فرد" data-i18n="opt_pax_group">أكثر من 14 فرد (مجموعة)</option>
+                <option value="4 أفراد" data-i18n="opt_pax_4" selected>4 أفراد</option>
+                <option value="5 أفراد" data-i18n="opt_pax_5">5 أفراد</option>
+                <option value="6 أفراد" data-i18n="opt_pax_6">6 أفراد</option>
+                <option value="7 أفراد" data-i18n="opt_pax_7">7 أفراد</option>
+                <option value="8 أفراد" data-i18n="opt_pax_8">8 أفراد</option>
+                <option value="9 أفراد" data-i18n="opt_pax_9">9 أفراد</option>
+                <option value="10 أفراد" data-i18n="opt_pax_10">10 أفراد</option>
+                <option value="11 فرد" data-i18n="opt_pax_11">11 فرد</option>
+                <option value="12 فرد" data-i18n="opt_pax_12">12 فرد</option>
+                <option value="13 فرد" data-i18n="opt_pax_13">13 فرد</option>
+                <option value="14 فرد فأكثر" data-i18n="opt_pax_14_plus">14 فرد فأكثر (مجموعة VIP)</option>
               </select>
             </div>
 
@@ -501,15 +506,11 @@
             <div>
               <label for="luggageCount" class="block text-xs font-bold text-neutral-300 mb-2">
                 <i class="fa-solid fa-suitcase-rolling text-brand-red ml-1.5 mr-1.5"></i>
-                <span data-i18n="field_luggage">عدد الحقائب والأمتعة *</span>
+                <span data-i18n="field_luggage">عدد الحقائب والأمتعة</span>
               </label>
-              <select id="luggageCount" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
-                <option value="بدون حقائب كبيرة (حقائب يد شخصية فقط)" data-i18n="opt_luggage_0">بدون حقائب كبيرة (حقائب يد شخصية فقط)</option>
-                <option value="1 إلى 2 حقيبة سفر" data-i18n="opt_luggage_1_2">1 إلى 2 حقيبة سفر</option>
-                <option value="3 إلى 4 حقائب سفر" data-i18n="opt_luggage_3_4" selected>3 إلى 4 حقائب سفر</option>
-                <option value="5 إلى 7 حقائب كبيرة" data-i18n="opt_luggage_5_7">5 إلى 7 حقائب كبيرة</option>
-                <option value="8 حقائب فأكثر" data-i18n="opt_luggage_8_plus">8 حقائب فأكثر (تحتاج فان سياحي)</option>
-              </select>
+              <div class="relative">
+                <input type="number" id="luggageCount" min="0" max="99" placeholder="أدخل عدد الحقائب (مثال: 3)" class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 transition-colors" />
+              </div>
             </div>
 
           </div>
@@ -1883,25 +1884,30 @@
         field_dropoff: "مكان الوصول / الوجهة *",
         field_date: "تاريخ الرحلة *",
         field_time: "وقت الرحلة *",
-        field_service_type: "نوع الخدمة *",
+        field_service_type: "نوع الرحلة *",
+        opt_trip_oneway: "ذهاب أو عودة",
+        opt_trip_round_wait: "ذهاب وعودة وانتظار",
+        opt_trip_round_moves: "ذهاب وعودة وتحركات",
         field_car_class: "فئة السيارة المطلوبة *",
         field_name: "الاسم بالكامل *",
         field_phone: "رقم الهاتف / الواتساب *",
         field_notes: "ملاحظات إضافية (رقم الرحلة الجوية، طلب بوكيه ورد، عدد الحقائب...)",
         field_passengers: "عدد الأفراد (الركاب) *",
-        field_luggage: "عدد الحقائب والأمتعة *",
+        field_luggage: "عدد الحقائب والأمتعة",
         opt_pax_1: "1 فرد",
         opt_pax_2: "2 أفراد",
         opt_pax_3: "3 أفراد",
-        opt_pax_4: "4 أفراد (سيارة صالون / سيدان)",
-        opt_pax_family: "5 إلى 7 أفراد (عائلي / SUV)",
-        opt_pax_van: "8 إلى 14 فرد (فان سياحي VIP)",
-        opt_pax_group: "أكثر من 14 فرد (مجموعة)",
-        opt_luggage_0: "بدون حقائب كبيرة (حقائب يد شخصية فقط)",
-        opt_luggage_1_2: "1 إلى 2 حقيبة سفر",
-        opt_luggage_3_4: "3 إلى 4 حقائب سفر",
-        opt_luggage_5_7: "5 إلى 7 حقائب كبيرة",
-        opt_luggage_8_plus: "8 حقائب فأكثر (تحتاج فان سياحي)",
+        opt_pax_4: "4 أفراد",
+        opt_pax_5: "5 أفراد",
+        opt_pax_6: "6 أفراد",
+        opt_pax_7: "7 أفراد",
+        opt_pax_8: "8 أفراد",
+        opt_pax_9: "9 أفراد",
+        opt_pax_10: "10 أفراد",
+        opt_pax_11: "11 فرد",
+        opt_pax_12: "12 فرد",
+        opt_pax_13: "13 فرد",
+        opt_pax_14_plus: "14 فرد فأكثر (مجموعة VIP)",
         hero_cta_fleet: "استكشف أسطولنا الفاخر",
 
         car_cerato_title: "كيا سيراتو فارهة الحديثة",
@@ -2139,25 +2145,30 @@
         field_dropoff: "Drop-off Destination *",
         field_date: "Trip Date *",
         field_time: "Trip Time *",
-        field_service_type: "Service Category *",
+        field_service_type: "Trip Type *",
+        opt_trip_oneway: "One-way (Pick-up or Drop-off)",
+        opt_trip_round_wait: "Round-trip (With Waiting)",
+        opt_trip_round_moves: "Round-trip (With Local Movements)",
         field_car_class: "Preferred Vehicle Class *",
         field_name: "Full Name *",
         field_phone: "Phone / WhatsApp Number *",
         field_notes: "Additional Notes (Flight number, flowers, baggage count...)",
         field_passengers: "Number of Passengers *",
-        field_luggage: "Luggage / Baggage Count *",
+        field_luggage: "Luggage & Baggage Count",
         opt_pax_1: "1 Passenger",
         opt_pax_2: "2 Passengers",
         opt_pax_3: "3 Passengers",
-        opt_pax_4: "4 Passengers (Sedan Car)",
-        opt_pax_family: "5 to 7 Passengers (Family SUV / Carens)",
-        opt_pax_van: "8 to 14 Passengers (VIP Minibus)",
-        opt_pax_group: "More than 14 Passengers (Group)",
-        opt_luggage_0: "No large bags (Cabin / Hand luggage only)",
-        opt_luggage_1_2: "1 - 2 Travel Bags",
-        opt_luggage_3_4: "3 - 4 Travel Bags",
-        opt_luggage_5_7: "5 - 7 Large Bags",
-        opt_luggage_8_plus: "8+ Bags (Requires VIP Minibus)",
+        opt_pax_4: "4 Passengers",
+        opt_pax_5: "5 Passengers",
+        opt_pax_6: "6 Passengers",
+        opt_pax_7: "7 Passengers",
+        opt_pax_8: "8 Passengers",
+        opt_pax_9: "9 Passengers",
+        opt_pax_10: "10 Passengers",
+        opt_pax_11: "11 Passengers",
+        opt_pax_12: "12 Passengers",
+        opt_pax_13: "13 Passengers",
+        opt_pax_14_plus: "14+ Passengers (VIP Group)",
         hero_cta_fleet: "Explore Our Fleet",
 
         car_cerato_title: "Kia Cerato Modern Sedan",
@@ -2381,6 +2392,7 @@
       // Update placeholders
       const pickup = document.getElementById('pickupLocation');
       const dropoff = document.getElementById('dropoffLocation');
+      const luggage = document.getElementById('luggageCount');
       const name = document.getElementById('customerName');
       const phone = document.getElementById('customerPhone');
       const notes = document.getElementById('specialNotes');
@@ -2388,12 +2400,14 @@
       if (lang === 'ar') {
         if (pickup) pickup.placeholder = 'مثال: مطار القاهرة الدولي / المعادي / أي محافظة';
         if (dropoff) dropoff.placeholder = 'مثال: مطار القاهرة صالة 3 / الإسكندرية / أي محافظة';
+        if (luggage) luggage.placeholder = 'أدخل عدد الحقائب (مثال: 3)';
         if (name) name.placeholder = 'أدخل اسمك الكريم';
         if (phone) phone.placeholder = 'مثال: 01012345678';
         if (notes) notes.placeholder = 'أية طلبات خاصة إضافية ترغب في إبلاغنا بها...';
       } else {
         if (pickup) pickup.placeholder = 'e.g., Cairo Airport Terminal 3 / Alexandria / Any Governorate';
         if (dropoff) dropoff.placeholder = 'e.g., Cairo Airport / Alexandria / Any Governorate';
+        if (luggage) luggage.placeholder = 'Enter luggage count (e.g. 3)';
         if (name) name.placeholder = 'Enter your full name';
         if (phone) phone.placeholder = 'e.g., +20 101 234 5678';
         if (notes) notes.placeholder = 'Any special requests (flight number, flowers, baggage...)...';
@@ -2416,7 +2430,7 @@
       const time = document.getElementById('tripTime').value;
       const service = document.getElementById('serviceType').value;
       const passengers = document.getElementById('passengersCount') ? document.getElementById('passengersCount').value : '4 أفراد';
-      const luggage = document.getElementById('luggageCount') ? document.getElementById('luggageCount').value : '3-4 حقائب';
+      const luggageRaw = document.getElementById('luggageCount') ? document.getElementById('luggageCount').value.trim() : '';
       const name = document.getElementById('customerName').value.trim();
       const phone = document.getElementById('customerPhone').value.trim();
       const notes = document.getElementById('specialNotes').value.trim();
@@ -2424,6 +2438,21 @@
       if (!pickup || !dropoff || !date || !time || !name || !phone) {
         alert(currentLang === 'ar' ? 'يرجى ملء جميع الحقول المطلوبة لتأكيد حجزك.' : 'Please fill in all required fields to proceed.');
         return;
+      }
+
+      let luggageDisplayAr = 'بدون أمتعة كبيرة';
+      let luggageDisplayEn = 'No large luggage';
+
+      if (luggageRaw && parseInt(luggageRaw, 10) > 0) {
+        const c = parseInt(luggageRaw, 10);
+        if (c === 1) luggageDisplayAr = 'حقيبة واحدة (1)';
+        else if (c === 2) luggageDisplayAr = 'حقيبتان (2)';
+        else if (c >= 3 && c <= 10) luggageDisplayAr = `${c} حقائب`;
+        else luggageDisplayAr = `${c} حقيبة`;
+        luggageDisplayEn = `${c} ${c === 1 ? 'Bag' : 'Bags'}`;
+      } else if (luggageRaw === '0') {
+        luggageDisplayAr = 'بدون حقائب (0)';
+        luggageDisplayEn = '0 Bags';
       }
 
       // Build structured WhatsApp message
@@ -2437,9 +2466,9 @@
                   `🏁 *وجهة الوصول:* ${dropoff}\n` +
                   `📅 *التاريخ:* ${date}\n` +
                   `⏰ *الوقت:* ${time}\n` +
-                  `⭐ *نوع الخدمة:* ${service}\n` +
+                  `⭐ *نوع الرحلة:* ${service}\n` +
                   `👥 *عدد الأفراد:* ${passengers}\n` +
-                  `🧳 *عدد الحقائب:* ${luggage}\n` +
+                  `🧳 *عدد الحقائب:* ${luggageDisplayAr}\n` +
                   (notes ? `📝 *ملاحظات خاصة:* ${notes}\n` : '') +
                   `━━━━━━━━━━━━━━━━━━━━\n` +
                   `✨ تم الإرسال من الموقع الإلكتروني الرسمي لشركة سيف واي ليموزين`;
@@ -2452,9 +2481,9 @@
                   `🏁 *Drop-off Destination:* ${dropoff}\n` +
                   `📅 *Date:* ${date}\n` +
                   `⏰ *Time:* ${time}\n` +
-                  `⭐ *Service Category:* ${service}\n` +
+                  `⭐ *Trip Type:* ${service}\n` +
                   `👥 *Passengers:* ${passengers}\n` +
-                  `🧳 *Luggage:* ${luggage}\n` +
+                  `🧳 *Luggage Count:* ${luggageDisplayEn}\n` +
                   (notes ? `📝 *Special Requests:* ${notes}\n` : '') +
                   `━━━━━━━━━━━━━━━━━━━━\n` +
                   `✨ Sent via Safeway Limousine Official Website`;
@@ -2488,14 +2517,14 @@
       if (pickupEl) pickupEl.value = pickup;
       if (dropoffEl) dropoffEl.value = dropoff;
 
-      if (serviceCategory === 'wedding') {
-        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'زفاف العرايس والمناسبات' : 'Bridal & Wedding Limousine';
-      } else if (serviceCategory === 'airport') {
-        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'استقبال وتوديع مطارات' : 'Airport Meet & Greet Transfer';
-      } else if (serviceCategory === 'intercity') {
-        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'سفر محافظات وسياحة' : 'Intercity City-to-City Travel';
-      } else if (serviceCategory === 'medical') {
-        if (serviceEl) serviceEl.value = currentLang === 'ar' ? 'مشاوير كشف أطباء' : 'Medical Clinic & Doctor Visit';
+      if (serviceEl) {
+        if (serviceCategory === 'wedding') {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
+        } else if (serviceCategory === 'medical') {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
+        } else {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+        }
       }
 
       const bookingSec = document.getElementById('booking-section');
@@ -2509,8 +2538,12 @@
       const serviceEl = document.getElementById('serviceType');
       const notesEl = document.getElementById('specialNotes');
 
-      if (serviceEl && serviceName) {
-        serviceEl.value = serviceName;
+      if (serviceEl) {
+        if (serviceName && serviceName.includes('زفاف')) {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
+        } else {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+        }
       }
       if (notesEl && carName) {
         notesEl.value = (currentLang === 'ar' ? 'السيارة المطلوبة: ' : 'Requested Vehicle: ') + carName;
@@ -2524,7 +2557,19 @@
 
     function prefillService(serviceName) {
       const serviceEl = document.getElementById('serviceType');
-      if (serviceEl) serviceEl.value = serviceName;
+      const notesEl = document.getElementById('specialNotes');
+      if (serviceEl) {
+        if (serviceName && serviceName.includes('زفاف')) {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
+        } else if (serviceName && (serviceName.includes('كشف') || serviceName.includes('أطباء'))) {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
+        } else {
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+        }
+      }
+      if (notesEl && serviceName) {
+        notesEl.value = (currentLang === 'ar' ? 'الخدمة المطلوبة: ' : 'Requested Service: ') + serviceName;
+      }
       const bookingSec = document.getElementById('booking-section');
       if (bookingSec) {
         bookingSec.scrollIntoView({ behavior: 'smooth' });
