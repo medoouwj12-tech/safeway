@@ -500,7 +500,8 @@
                 <span data-i18n="field_service_type">نوع الرحلة *</span>
               </label>
               <select id="serviceType" required class="w-full bg-neutral-900/90 border border-neutral-700 focus:border-brand-red focus:ring-1 focus:ring-brand-red rounded-xl px-4 py-3 text-sm text-white transition-colors">
-                <option value="ذهاب أو عودة" data-i18n="opt_trip_oneway">ذهاب أو عودة</option>
+                <option value="ذهاب" data-i18n="opt_trip_go">ذهاب</option>
+                <option value="عودة" data-i18n="opt_trip_return">عودة</option>
                 <option value="ذهاب وعودة وانتظار" data-i18n="opt_trip_round_wait">ذهاب وعودة وانتظار</option>
                 <option value="ذهاب وعودة وتحركات" data-i18n="opt_trip_round_moves">ذهاب وعودة وتحركات</option>
               </select>
@@ -1932,7 +1933,8 @@
         field_date: "تاريخ الرحلة *",
         field_time: "وقت الرحلة *",
         field_service_type: "نوع الرحلة *",
-        opt_trip_oneway: "ذهاب أو عودة",
+        opt_trip_go: "ذهاب",
+        opt_trip_return: "عودة",
         opt_trip_round_wait: "ذهاب وعودة وانتظار",
         opt_trip_round_moves: "ذهاب وعودة وتحركات",
         field_car_class: "فئة السيارة المطلوبة *",
@@ -2210,7 +2212,8 @@
         field_date: "Trip Date *",
         field_time: "Trip Time *",
         field_service_type: "Trip Type *",
-        opt_trip_oneway: "One-way (Pick-up or Drop-off)",
+        opt_trip_go: "One-way (Departure)",
+        opt_trip_return: "One-way (Return)",
         opt_trip_round_wait: "Round-trip (With Waiting)",
         opt_trip_round_moves: "Round-trip (With Local Movements)",
         field_car_class: "Preferred Vehicle Class *",
@@ -2602,7 +2605,7 @@
         } else if (serviceCategory === 'medical') {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
         } else {
-          serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب' : 'One-way (Departure)';
         }
       }
 
@@ -2628,7 +2631,7 @@
         if (serviceName && serviceName.includes('زفاف')) {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وتحركات' : 'Round-trip (With Local Movements)';
         } else {
-          serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب' : 'One-way (Departure)';
         }
       }
       if (notesEl && carName) {
@@ -2650,7 +2653,7 @@
         } else if (serviceName && (serviceName.includes('كشف') || serviceName.includes('أطباء'))) {
           serviceEl.value = currentLang === 'ar' ? 'ذهاب وعودة وانتظار' : 'Round-trip (With Waiting)';
         } else {
-          serviceEl.value = currentLang === 'ar' ? 'ذهاب أو عودة' : 'One-way (Pick-up or Drop-off)';
+          serviceEl.value = currentLang === 'ar' ? 'ذهاب' : 'One-way (Departure)';
         }
       }
       if (notesEl && serviceName) {
